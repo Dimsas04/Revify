@@ -339,7 +339,7 @@ const Analysis = () => {
                   </>
                 ) : (
                   <>
-                    Extract Features
+                    Extract Features and Reviews
                     <ArrowRightIcon className="w-5 h-5" />
                   </>
                 )}

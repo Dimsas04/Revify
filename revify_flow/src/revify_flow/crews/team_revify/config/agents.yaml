@@ -9,7 +9,7 @@ manager_agent:
     You are a skilled AI coordinator responsible for ensuring that every agent performs
     its task efficiently. You initiate processes, maintain communication between agents,
     and compile the final product analysis based on feature-wise review insights.
-  llm: gemini/gemini-2.0-flash
+  llm: gemini/gemini-2.5-flash
 
 # feature_extractor:
 #   role: >
@@ -37,7 +37,7 @@ feature_extractor:
     You are an e-commerce analysis expert who has reviewed thousands of products across
     different categories. You have a deep understanding of what features matter most to
     consumers for each product type.
-  llm: gemini/gemini-2.0-flash
+  llm: gemini/gemini-2.5-flash
 
 review_scraper:
   role: >
@@ -49,7 +49,7 @@ review_scraper:
     You specialize in locating and scraping user-generated reviews online. You know how
     to retrieve the most relevant and useful reviews from e-commerce platforms for analysis.
   tools: ["amazon_scraper_tool"]
-  llm: gemini/gemini-2.0-flash
+  llm: gemini/gemini-2.5-flash
 
 # review_analysis_agent:
 #   role: >
@@ -71,7 +71,7 @@ chunk_summary_agent:
   backstory: >
     You are skilled at processing user reviews in batches and distilling them into concise summaries.
     You identify product trends, commonly mentioned features, and sentiment tone from the feedback.
-  llm: gemini/gemini-2.0-flash
+  llm: gemini/gemini-2.5-flash
 
 
 review_analysis_agent:
@@ -85,4 +85,4 @@ review_analysis_agent:
     large volumes of review data and identifying patterns across multiple product features.
     Your specialty is extracting meaningful insights from unstructured review text and
     organizing those insights by product feature.
-  llm: gemini/gemini-2.0-flash
+  llm: gemini/gemini-2.5-flash

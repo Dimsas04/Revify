@@ -129,8 +129,8 @@ def main():
     """Run benchmarking with different chunk sizes"""
     
     # Configuration
-    REVIEWS_FILE = "benchmark_reviews_500.csv"  # Your 500-review dataset
-    CHUNK_SIZES = [50, 100, 250]
+    REVIEWS_FILE = "benchmark_reviews_250.csv"  # Your 500-review dataset
+    CHUNK_SIZES = [25, 50, 125]
     
     # Sample features (you can modify these)
     FEATURES = [

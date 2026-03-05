@@ -1,0 +1,72 @@
+{
+  "benchmark_info": {
+    "reviews_file": "benchmark_reviews_250.csv",
+    "chunk_sizes": [
+      25,
+      50,
+      125
+    ],
+    "features": [
+      "Voice Assistant Performance (Alexa Integration)",
+      "Display Quality",
+      "Sound Quality",
+      "Smart Home Control Capabilities",
+      "Privacy and Security Features",
+      "Camera Quality",
+      "Ease of Setup and Use",
+      "Design and Build Quality",
+      "Connectivity (Wifi and Bluetooth)",
+      "Value for Money"
+    ],
+    "total_reviews": 250,
+    "benchmark_date": "2026-03-05T20:50:08.272666",
+    "reference_chunk_size": 125
+  },
+  "insight_files": [
+    {
+      "chunk_size": 25,
+      "file": "benchmark_output/chunk_25_feature_insights_20260305_204408.json",
+      "num_features": 10
+    },
+    {
+      "chunk_size": 50,
+      "file": "benchmark_output/chunk_50_feature_insights_20260305_204653.json",
+      "num_features": 10
+    },
+    {
+      "chunk_size": 125,
+      "file": "benchmark_output/chunk_125_feature_insights_20260305_204852.json",
+      "num_features": 10
+    }
+  ],
+  "quality_metrics": {
+    "25": {
+      "rouge1_precision": 0.44529262086513993,
+      "rouge1_recall": 0.8550488599348535,
+      "rouge1_fmeasure": 0.5856107083100949,
+      "rouge2_precision": 0.2606112054329372,
+      "rouge2_recall": 0.5008156606851549,
+      "rouge2_fmeasure": 0.3428252372975992,
+      "rougeL_precision": 0.27056827820186596,
+      "rougeL_recall": 0.5195439739413681,
+      "rougeL_fmeasure": 0.3558282208588957,
+      "bertscore_precision": 0.8159919381141663,
+      "bertscore_recall": 0.7982819080352783,
+      "bertscore_f1": 0.8070398569107056
+    },
+    "50": {
+      "rouge1_precision": 0.5126903553299492,
+      "rouge1_recall": 0.8224755700325733,
+      "rouge1_fmeasure": 0.6316447779862414,
+      "rouge2_precision": 0.29065040650406504,
+      "rouge2_recall": 0.466557911908646,
+      "rouge2_fmeasure": 0.3581715716969318,
+      "rougeL_precision": 0.2913705583756345,
+      "rougeL_recall": 0.46742671009771986,
+      "rougeL_fmeasure": 0.358974358974359,
+      "bertscore_precision": 0.8499999046325684,
+      "bertscore_recall": 0.8448433876037598,
+      "bertscore_f1": 0.8474138379096985
+    }
+  }
+}

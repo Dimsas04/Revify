@@ -1,0 +1,209 @@
+{
+  "metrics": {
+    "chunk_size": 125,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T17:32:42.166900",
+    "summarization_time": 12.5,
+    "analysis_time": 20.93,
+    "total_time": 33.43,
+    "num_chunks": 2,
+    "tokens_estimate": 436,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.0987,
+    "rouge2_f1": 0.0319,
+    "rougeL_f1": 0.0482,
+    "bert_f1": 0.745
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "Overall capabilities for providing information, managing daily routines, and entertainment",
+          "count": 2
+        },
+        {
+          "point": "Occasional issues with voice recognition from a distance or with background noise",
+          "count": 2
+        },
+        {
+          "point": "Alexa not being as 'intelligent' as expected for certain commands",
+          "count": 1
+        },
+        {
+          "point": "Beneficial for hands-free interactions",
+          "count": 1
+        },
+        {
+          "point": "Strong negative sentiment due to lack of full YouTube functionality/support (Google dispute)",
+          "count": 2
+        }
+      ],
+      "verdict": "Alexa's broad capabilities for information and entertainment are appreciated, but users experience frustrations with occasional voice recognition issues, perceived intelligence limitations for specific commands, and a significant disappointment over the lack of YouTube support."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Addition of the screen is a 'game changer' and significant upgrade over other Echo devices",
+          "count": 2
+        },
+        {
+          "point": "Users love the visual aspect",
+          "count": 1
+        },
+        {
+          "point": "Enhances the Alexa experience by showing recipes, song lyrics, answers to questions",
+          "count": 2
+        },
+        {
+          "point": "Facilitates video calls/intercom (especially for connecting with family, including elderly relatives and children) and 'Drop In' feature",
+          "count": 4
+        },
+        {
+          "point": "Useful for displaying recipes in the kitchen",
+          "count": 2
+        },
+        {
+          "point": "Good for showing song lyrics",
+          "count": 2
+        },
+        {
+          "point": "Beneficial for viewing security camera feeds",
+          "count": 2
+        },
+        {
+          "point": "Provides weather forecasts and news briefings with associated video/text",
+          "count": 1
+        }
+      ],
+      "verdict": "The display is the most highly praised feature, significantly enhancing the user experience by adding a visual dimension to Alexa's capabilities, making it excellent for video communication, recipes, media consumption, and smart home monitoring."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Generally well-received",
+          "count": 1
+        },
+        {
+          "point": "Described as 'outstanding'",
+          "count": 1
+        },
+        {
+          "point": "Superior to other Echo models",
+          "count": 1
+        },
+        {
+          "point": "Good sound quality for music playback",
+          "count": 1
+        },
+        {
+          "point": "Minor criticism: desire for improved speakers to function as standalone Bluetooth speakers",
+          "count": 1
+        }
+      ],
+      "verdict": "The sound quality is generally excellent and considered an improvement over previous Echo models, providing a good experience for music playback, though some users express a desire for enhanced standalone Bluetooth speaker functionality."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Essential component for smart home integration",
+          "count": 1
+        },
+        {
+          "point": "Allows users to monitor security cameras, control lights, and other connected devices",
+          "count": 2
+        }
+      ],
+      "verdict": "The Echo Show is highly valued as an essential hub for smart home integration, providing convenient visual monitoring of security cameras and control over other connected devices."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Neutral",
+      "key_points": [],
+      "verdict": "Reviews do not provide specific insights or sentiments regarding the device's inherent privacy and security features."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Facilitates video calls/intercom (especially for connecting with family, including elderly relatives and children)",
+          "count": 3
+        },
+        {
+          "point": "Enables the 'Drop In' feature",
+          "count": 1
+        }
+      ],
+      "verdict": "While not explicitly detailing 'quality,' the camera's functionality for video calls and the 'Drop In' feature is a highly valued and frequently praised aspect of the device."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Consistently described as easy to set up and use",
+          "count": 2
+        },
+        {
+          "point": "Accessible even for less tech-savvy individuals",
+          "count": 1
+        },
+        {
+          "point": "Isolated negative experience mentioned difficulty with initial setup verification codes",
+          "count": 1
+        }
+      ],
+      "verdict": "The device is generally very easy to set up and use, making it accessible to a wide range of users, with only a few isolated reports of minor initial setup difficulties."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Neutral",
+      "key_points": [],
+      "verdict": "Reviews do not provide specific insights or sentiments regarding the design and build quality of the device."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "Desire for improved speakers to function as standalone Bluetooth speakers",
+          "count": 1
+        }
+      ],
+      "verdict": "While core connectivity (implied Wifi) is functional, there is a minor expressed desire for enhanced Bluetooth capabilities, specifically for using the device as a standalone speaker."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "High satisfaction and perceived value, leading to multiple purchases/gifts",
+          "count": 1
+        },
+        {
+          "point": "Some felt the value was better at a sale price than the regular price",
+          "count": 1
+        },
+        {
+          "point": "Considered a highly useful, entertaining, and recommended smart home device",
+          "count": 1
+        },
+        {
+          "point": "Regarded as a valuable smart home assistant",
+          "count": 1
+        }
+      ],
+      "verdict": "The Echo Show is widely seen as a highly valuable, useful, and entertaining smart home device, leading to high satisfaction and recommendations, though some users perceive better value when purchased at a sale price."
+    }
+  ]
+}

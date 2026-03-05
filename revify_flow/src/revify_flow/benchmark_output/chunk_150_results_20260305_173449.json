@@ -1,0 +1,195 @@
+{
+  "metrics": {
+    "chunk_size": 150,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T17:33:59.045535",
+    "summarization_time": 19.68,
+    "analysis_time": 21.6,
+    "total_time": 41.28,
+    "num_chunks": 2,
+    "tokens_estimate": 386,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.0869,
+    "rouge2_f1": 0.0235,
+    "rougeL_f1": 0.041,
+    "bert_f1": 0.7435
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "Alexa's core functionality (answers, music, reminders) is consistently lauded.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Occasional voice recognition quirks.",
+          "frequency_count": 1
+        },
+        {
+          "point": "Occasional microphone issues, where Alexa doesn't accurately hear commands.",
+          "frequency_count": 1
+        },
+        {
+          "point": "Desire for more advanced voice recognition capabilities.",
+          "frequency_count": 1
+        },
+        {
+          "point": "Wish for more flexible alarm settings.",
+          "frequency_count": 1
+        }
+      ],
+      "verdict": "While Alexa's core functions are highly praised for their utility, some users encounter occasional issues with voice recognition and microphone accuracy, expressing a desire for more advanced capabilities."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "The integrated screen is the most frequently highlighted and beloved feature.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Elevates the Alexa experience by allowing users to see content (recipes, news headlines, song lyrics, weather, calendars).",
+          "frequency_count": 3
+        },
+        {
+          "point": "Praised for serving as a digital photo frame.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Facilitates hands-free video calls.",
+          "frequency_count": 3
+        }
+      ],
+      "verdict": "The integrated screen is overwhelmingly positive, considered a game-changer that significantly enhances the Alexa experience by providing visual content and enabling video communication."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Users note good sound quality.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Considered a significant upgrade from screen-less Echo products.",
+          "frequency_count": 3
+        }
+      ],
+      "verdict": "The sound quality is well-received, marked as a noticeable improvement over previous Echo models without a screen."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Praised for ease of integration with smart home devices (lights, security cameras).",
+          "frequency_count": 3
+        },
+        {
+          "point": "Acts as a central hub for home automation.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Enables voice control of lights, thermostats, and security cameras (e.g., Arlo, Ring).",
+          "frequency_count": 3
+        }
+      ],
+      "verdict": "The Echo Show is highly effective as a smart home hub, praised for its seamless integration and voice control over various devices, making home automation convenient."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "No specific mentions of privacy or security features in the provided reviews.",
+          "frequency_count": 0
+        }
+      ],
+      "verdict": "There is no information regarding privacy or security features in the provided customer reviews."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Facilitates hands-free video calls, especially for connecting with family members (including the elderly).",
+          "frequency_count": 3
+        },
+        {
+          "point": "Enables the 'Drop In' communication feature, valued for checking on relatives or children.",
+          "frequency_count": 3
+        }
+      ],
+      "verdict": "While not directly commenting on technical image quality, users highly value the camera's functionality for hands-free video calls and the 'Drop In' feature, seeing it as a key communication tool."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "Generally described as easy setup and integration.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Some initial setup frustrations, such as verification codes.",
+          "frequency_count": 1
+        },
+        {
+          "point": "Strong negative sentiments revolve around the lack of YouTube support, which was a significant feature for many and led to disappointment.",
+          "frequency_count": 3
+        }
+      ],
+      "verdict": "Setup is largely easy, with minor frustrations noted. However, the removal or limited functionality of YouTube caused significant disappointment for users who relied on it."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "No specific mentions of design or build quality in the provided reviews.",
+          "frequency_count": 0
+        }
+      ],
+      "verdict": "There is no information regarding design or build quality in the provided customer reviews."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "No specific mentions of Wifi or Bluetooth connectivity performance in the provided reviews.",
+          "frequency_count": 0
+        }
+      ],
+      "verdict": "There is no information regarding Wifi or Bluetooth connectivity performance in the provided customer reviews."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Users express overwhelmingly positive sentiment, calling it 'awesome,' 'great,' 'amazing,' and a 'game changer'.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Often cited as the 'best Echo yet'.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Highly recommended by users.",
+          "frequency_count": 3
+        },
+        {
+          "point": "Frequently purchased in multiples and given as successful gifts.",
+          "frequency_count": 3
+        }
+      ],
+      "verdict": "The Amazon Echo Show is perceived as excellent value for money, with users highly recommending it, often purchasing it for multiple locations or as gifts due to its 'game changer' status."
+    }
+  ]
+}

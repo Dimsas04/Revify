@@ -1,0 +1,411 @@
+{
+  "metrics": {
+    "chunk_size": 10,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T18:44:22.730514",
+    "summarization_time": 191.6,
+    "analysis_time": 86.28,
+    "total_time": 277.88,
+    "num_chunks": 25,
+    "tokens_estimate": 3911,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.1489,
+    "rouge2_f1": 0.0386,
+    "rougeL_f1": 0.0557,
+    "bert_f1": 0.753
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Core Alexa functionality",
+          "count": 3
+        },
+        {
+          "point": "Alexa is awesome/helpful",
+          "count": 4
+        },
+        {
+          "point": "Alexa's accuracy",
+          "count": 2
+        },
+        {
+          "point": "Answers questions/provides information (weather, news, music updates, general questions)",
+          "count": 11
+        },
+        {
+          "point": "Hands-free operation/commands",
+          "count": 5
+        },
+        {
+          "point": "Responsive microphone",
+          "count": 2
+        },
+        {
+          "point": "Voice command capabilities",
+          "count": 2
+        },
+        {
+          "point": "General usefulness/versatility",
+          "count": 5
+        },
+        {
+          "point": "Intercom capability",
+          "count": 2
+        },
+        {
+          "point": "Occasional voice recognition quirks/issues (distance, specific commands)",
+          "count": 4
+        },
+        {
+          "point": "Alexa's perceived lack of intelligence for certain simple commands/doesn't know answers",
+          "count": 2
+        },
+        {
+          "point": "Alexa being 'very literal at times' requiring precise commands",
+          "count": 1
+        },
+        {
+          "point": "Alexa occasionally answers when not directly asked",
+          "count": 1
+        },
+        {
+          "point": "Lacks 'Google smart' context",
+          "count": 1
+        },
+        {
+          "point": "Microphone quality frustrating/inferior to other Alexa devices",
+          "count": 1
+        }
+      ],
+      "verdict": "Users are overwhelmingly positive about Alexa's core functionality, accuracy, and ability to provide information hands-free. While generally praised for its helpfulness, minor issues with voice recognition from a distance or specific commands, and occasional lack of intelligence for complex queries are noted, along with one complaint about microphone quality."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        {
+          "point": "7-inch screen",
+          "count": 11
+        },
+        {
+          "point": "HD video/crisp/bright/vivid/clear display",
+          "count": 5
+        },
+        {
+          "point": "Displays answers/visual information",
+          "count": 7
+        },
+        {
+          "point": "Watching videos (Amazon video, movie trailers, Prime Video)",
+          "count": 8
+        },
+        {
+          "point": "Security camera feeds/monitoring",
+          "count": 9
+        },
+        {
+          "point": "Recipes display",
+          "count": 9
+        },
+        {
+          "point": "Song lyrics/album art display",
+          "count": 9
+        },
+        {
+          "point": "News/weather/flash briefings display",
+          "count": 7
+        },
+        {
+          "point": "Digital picture frame functionality",
+          "count": 2
+        },
+        {
+          "point": "Video calls/visual communication",
+          "count": 10
+        },
+        {
+          "point": "Screen is a significant upgrade/game changer/best part",
+          "count": 6
+        },
+        {
+          "point": "Disappointment/desire for YouTube functionality (loss or expanded access)",
+          "count": 3
+        },
+        {
+          "point": "Desire for regular TV access",
+          "count": 1
+        },
+        {
+          "point": "Limited screen functionality (despite showing some things)",
+          "count": 1
+        }
+      ],
+      "verdict": "The 7-inch screen is overwhelmingly praised as a 'game changer' and a significant upgrade, enhancing the Alexa experience by visually displaying answers, recipes, lyrics, news, and enabling video calls and security camera monitoring. The primary criticism is the loss or desire for YouTube functionality."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Good/clear sound",
+          "count": 7
+        },
+        {
+          "point": "Awesome sound",
+          "count": 2
+        },
+        {
+          "point": "Decent sound",
+          "count": 1
+        },
+        {
+          "point": "Outstanding/superb/amazing sound",
+          "count": 6
+        },
+        {
+          "point": "Superior/blown away by sound (stronger bass, Dolby Audio, directional stereo)",
+          "count": 3
+        },
+        {
+          "point": "Fills the room",
+          "count": 1
+        },
+        {
+          "point": "Music playback",
+          "count": 2
+        },
+        {
+          "point": "Desire for improved speaker functionality (standalone Bluetooth speaker)",
+          "count": 1
+        },
+        {
+          "point": "Perceived slight decline in speaker quality compared to previous Echo models",
+          "count": 1
+        },
+        {
+          "point": "Desire for an auxiliary output or optional wireless subwoofer for enhanced bass",
+          "count": 1
+        },
+        {
+          "point": "May not match dedicated Echo speakers",
+          "count": 1
+        },
+        {
+          "point": "Desire for more bass",
+          "count": 1
+        }
+      ],
+      "verdict": "Sound quality is generally praised as good, clear, and even 'amazing' or 'superior,' often exceeding expectations for music playback and filling the room. Some users express a desire for more bass, standalone Bluetooth speaker functionality, or an auxiliary output, and a few noted a slight decline compared to older models or dedicated speakers."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        {
+          "point": "Smart home compatibility/integration",
+          "count": 10
+        },
+        {
+          "point": "Controlling lights/AC/thermostats/TV/sound systems",
+          "count": 7
+        },
+        {
+          "point": "Viewing security cameras/doorbells",
+          "count": 9
+        },
+        {
+          "point": "Hands-free control",
+          "count": 2
+        },
+        {
+          "point": "Connecting to everything in home",
+          "count": 1
+        },
+        {
+          "point": "Easy setup for smart devices",
+          "count": 1
+        },
+        {
+          "point": "Absence of a built-in 'hub'",
+          "count": 1
+        }
+      ],
+      "verdict": "The Echo Show is highly lauded for its seamless and strong smart home integration, allowing hands-free control of lights, AC, thermostats, and other devices, as well as viewing security cameras and doorbells. The only minor criticism is the absence of a built-in hub for broader compatibility."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Security camera integration/viewing (on-demand video, live feeds from Arlo Pro, Ring, etc.)",
+          "count": 11
+        },
+        {
+          "point": "Checking on the house/family remotely",
+          "count": 3
+        }
+      ],
+      "verdict": "Users highly value the Echo Show's ability to integrate with and display security camera feeds (including live feeds from various brands) for monitoring the house and checking on family members remotely. This functionality is seen as a significant benefit."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Video call option/visual communication (clear, flawless)",
+          "count": 10
+        },
+        {
+          "point": "Desire for broader camera compatibility (e.g., FaceTime support)",
+          "count": 1
+        }
+      ],
+      "verdict": "The camera functionality for video calls and visual communication is generally praised as clear and flawless, making it effective for connecting with family. A minor desire for broader compatibility, such as FaceTime support, is mentioned."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        {
+          "point": "Ease of setup",
+          "count": 11
+        },
+        {
+          "point": "Ease of use",
+          "count": 12
+        },
+        {
+          "point": "Seamless integration",
+          "count": 2
+        },
+        {
+          "point": "Accessible even for children/beginners",
+          "count": 1
+        },
+        {
+          "point": "Fast setup",
+          "count": 1
+        },
+        {
+          "point": "Highly frustrating setup experience (verification codes, inadequate instructions, app directions)",
+          "count": 4
+        }
+      ],
+      "verdict": "Users overwhelmingly praise the Echo Show for its ease of use and straightforward setup, making it accessible even for beginners. However, a minority of users experienced frustrating setup issues related to verification codes, inadequate instructions, or app directions, though support was sometimes helpful."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Good design",
+          "count": 2
+        },
+        {
+          "point": "Sleek shape/First Rate build quality",
+          "count": 1
+        },
+        {
+          "point": "Fits well into contemporary environments",
+          "count": 1
+        },
+        {
+          "point": "Space saver",
+          "count": 1
+        },
+        {
+          "point": "Fits well in various settings (kitchen, bedroom)",
+          "count": 2
+        },
+        {
+          "point": "Slightly smaller than expected",
+          "count": 2
+        }
+      ],
+      "verdict": "The design is generally considered good, sleek, and of first-rate build quality, fitting well into various home environments and acting as a space saver. A few users noted it was slightly smaller than expected."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Reliable Bluetooth and WiFi connectivity",
+          "count": 1
+        },
+        {
+          "point": "Multi-room audio (Sonos integration)",
+          "count": 1
+        },
+        {
+          "point": "'Drop In' feature for inter-device communication",
+          "count": 5
+        },
+        {
+          "point": "Desire for improved speaker functionality (standalone Bluetooth speaker)",
+          "count": 1
+        },
+        {
+          "point": "Desire for output plugs for connecting to external sound systems",
+          "count": 1
+        }
+      ],
+      "verdict": "Connectivity is reliable for both WiFi and Bluetooth, supporting multi-room audio and the 'Drop In' communication feature. Some users expressed a desire for it to function as a standalone Bluetooth speaker or to have output plugs for external sound systems."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        {
+          "point": "Worth every penny/Best Buy",
+          "count": 2
+        },
+        {
+          "point": "Excellent/Awesome/Amazing",
+          "count": 10
+        },
+        {
+          "point": "Great gift/hit as a gift",
+          "count": 5
+        },
+        {
+          "point": "Significant upgrade/game changer",
+          "count": 8
+        },
+        {
+          "point": "Must-have/indispensable",
+          "count": 6
+        },
+        {
+          "point": "Love it/highly satisfied",
+          "count": 10
+        },
+        {
+          "point": "Versatile/useful/helpful",
+          "count": 10
+        },
+        {
+          "point": "Entertaining/fun",
+          "count": 4
+        },
+        {
+          "point": "Concern about value at regular price compared to sale price",
+          "count": 2
+        },
+        {
+          "point": "Might 'fade away' from daily life over time",
+          "count": 1
+        },
+        {
+          "point": "Ok not impressive/comparable to a voice-activated tablet",
+          "count": 1
+        }
+      ],
+      "verdict": "The Echo Show is overwhelmingly seen as a high-value product, frequently described as 'worth every penny,' 'amazing,' a 'must-have,' and a 'game changer,' especially as a gift or an upgrade. While most users express high satisfaction and find it versatile and entertaining, a minority questioned its value at full price or noted potential for reduced daily use over time."
+    }
+  ]
+}

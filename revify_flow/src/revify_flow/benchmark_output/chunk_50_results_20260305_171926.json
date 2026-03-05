@@ -1,0 +1,108 @@
+{
+  "metrics": {
+    "chunk_size": 50,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T17:18:18.858055",
+    "summarization_time": 39.4,
+    "analysis_time": 20.99,
+    "total_time": 60.4,
+    "num_chunks": 5,
+    "tokens_estimate": 1238,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.0686,
+    "rouge2_f1": 0.0195,
+    "rougeL_f1": 0.0338,
+    "bert_f1": 0.7599
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Positive",
+      "key_points": [
+        "Significantly enhances the Alexa experience (1)"
+      ],
+      "verdict": "The integrated screen greatly improves the overall Alexa experience by providing visual feedback, making interactions more comprehensive and user-friendly."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        "Most frequently praised feature (1)",
+        "Significantly enhances the Alexa experience by allowing users to view recipes, song lyrics, news briefings, video calls, security camera feeds, and general information with associated video or text (1)"
+      ],
+      "verdict": "The integrated screen is highly celebrated as the most praised feature, offering valuable visual utility across a wide range of tasks from entertainment to practical information."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        "Sound quality for music is generally appreciated (1)"
+      ],
+      "verdict": "Users generally appreciate the sound quality of the device, particularly when used for playing music."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Positive",
+      "key_points": [
+        "Utility in controlling smart home devices like lights and thermostats (1)",
+        "Allows viewing of security camera feeds (1)"
+      ],
+      "verdict": "The device is highly effective for smart home management, enabling control of lights and thermostats, and providing visual monitoring through security camera feeds."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Neutral",
+      "key_points": [
+        "No direct mentions of the device's inherent privacy or security features (1)"
+      ],
+      "verdict": "The provided reviews do not contain specific feedback regarding the privacy and security features of the Amazon Echo Show itself."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        "Capabilities for video communication (1)",
+        "Especially useful for connecting with elderly family members (1)"
+      ],
+      "verdict": "The camera's functionality for video communication is highly valued, particularly for facilitating connections with elderly family members."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Mixed",
+      "key_points": [
+        "Reviewers consistently highlight its ease of setup and use (1)",
+        "Rare but strong negative sentiment stemmed from a frustrating setup experience due to verification code issues (1)"
+      ],
+      "verdict": "While generally praised for its straightforward setup and ease of daily use, a small number of users reported significant frustration during initial setup due to specific issues like verification codes."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Neutral",
+      "key_points": [
+        "No direct mentions (1)"
+      ],
+      "verdict": "The provided reviews do not offer specific feedback or opinions on the design or build quality of the device."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Mixed",
+      "key_points": [
+        "Desire for improved Bluetooth speaker functionality (1)"
+      ],
+      "verdict": "While connectivity is present, some users expressed a desire for enhancements, specifically regarding improved Bluetooth speaker functionality."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Positive",
+      "key_points": [
+        "Highly recommended (1)",
+        "Seen as a valuable addition to homes (1)",
+        "Often leading to repeat purchases for themselves or family members (1)",
+        "Users describe it as 'awesome,' 'great,' and the 'best gift ever' (1)"
+      ],
+      "verdict": "The device is considered an excellent value, highly recommended as a valuable addition to homes, and frequently purchased as a gift or for multiple family members, indicating strong user satisfaction."
+    }
+  ]
+}

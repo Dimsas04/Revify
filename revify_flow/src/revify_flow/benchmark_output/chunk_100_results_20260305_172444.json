@@ -1,0 +1,275 @@
+{
+  "metrics": {
+    "chunk_size": 100,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T17:23:43.656429",
+    "summarization_time": 23.33,
+    "analysis_time": 27.87,
+    "total_time": 51.21,
+    "num_chunks": 3,
+    "tokens_estimate": 575,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.1176,
+    "rouge2_f1": 0.0346,
+    "rougeL_f1": 0.0517,
+    "bert_f1": 0.7431
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "Enhances Alexa experience with visuals/screen",
+          "frequency": 3
+        },
+        {
+          "point": "Occasional voice recognition issues/quirks",
+          "frequency": 3
+        },
+        {
+          "point": "Discontinuation/absence of YouTube support is a disappointment",
+          "frequency": 3
+        },
+        {
+          "point": "Literalness in Alexa's voice commands",
+          "frequency": 1
+        },
+        {
+          "point": "Sensitivity in alarm dismissal",
+          "frequency": 1
+        },
+        {
+          "point": "Seamless integration with other Echo products",
+          "frequency": 1
+        }
+      ],
+      "verdict": "While the screen significantly enhances the overall Alexa experience, users frequently note minor voice recognition issues, occasional literal interpretations of commands, and sensitivity in alarm dismissal. The absence of YouTube support is a consistent point of disappointment for some users."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        {
+          "point": "Screen enables video calls and 'Drop In' features",
+          "frequency": 3
+        },
+        {
+          "point": "Displays recipes with visuals",
+          "frequency": 3
+        },
+        {
+          "point": "Shows song lyrics",
+          "frequency": 3
+        },
+        {
+          "point": "Provides news, weather, and answers with visuals",
+          "frequency": 3
+        },
+        {
+          "point": "Serves as a monitor for security cameras (e.g., Ring, Arlo Pro)",
+          "frequency": 3
+        },
+        {
+          "point": "Significant/superior upgrade from screenless Echo models",
+          "frequency": 3
+        },
+        {
+          "point": "Adds tremendous value to the Alexa experience",
+          "frequency": 2
+        },
+        {
+          "point": "Excellent display clarity",
+          "frequency": 1
+        },
+        {
+          "point": "Utility for hands-free operations in the kitchen",
+          "frequency": 1
+        },
+        {
+          "point": "Functions as an entertainment hub (music, videos)",
+          "frequency": 1
+        },
+        {
+          "point": "7-inch screen size is a key differentiator",
+          "frequency": 1
+        },
+        {
+          "point": "Visual capabilities are highly satisfying",
+          "frequency": 1
+        },
+        {
+          "point": "Serves as a monitor for smart home devices (e.g., Philips Hue, Nest)",
+          "frequency": 1
+        }
+      ],
+      "verdict": "The integrated screen is the most praised feature, consistently highlighted for its excellent clarity and ability to add tremendous value by displaying visuals for various functions like video calls, recipes, news, lyrics, and monitoring security cameras. It is widely considered a significant upgrade from screenless Echo devices."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "Users widely commend the sound quality as excellent",
+          "frequency": 1
+        },
+        {
+          "point": "Desire for improved speaker quality (compared to original Echo)",
+          "frequency": 1
+        },
+        {
+          "point": "A few wishes for better audio bass",
+          "frequency": 1
+        }
+      ],
+      "verdict": "While generally praised for excellent sound quality, some users express a desire for improved speaker performance, specifically mentioning the bass, when comparing it to other Echo devices."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Seamless integration with smart home devices for controlling lights, thermostats, etc.",
+          "frequency": 2
+        },
+        {
+          "point": "Functions as a monitor for security cameras and other smart home devices",
+          "frequency": 3
+        },
+        {
+          "point": "Acts as a central smart home hub",
+          "frequency": 1
+        },
+        {
+          "point": "Effective for family communication and checking on elderly relatives via 'Drop In'",
+          "frequency": 2
+        },
+        {
+          "point": "Growing capabilities in smart home integration with continuous updates",
+          "frequency": 1
+        }
+      ],
+      "verdict": "The device excels as a smart home hub, offering seamless integration with various smart devices for control and monitoring, particularly for security cameras. Its 'Drop In' feature is valued for family communication and checking on elderly relatives, with continuous updates further enhancing its capabilities."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Serves as an effective monitor for security cameras",
+          "frequency": 3
+        },
+        {
+          "point": "Useful for checking on elderly relatives for safety/monitoring",
+          "frequency": 2
+        }
+      ],
+      "verdict": "Users appreciate the device's functionality as a tool for security and safety, primarily for monitoring security cameras and for communication/checking on family members, especially the elderly."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Enables smooth video calls",
+          "frequency": 3
+        },
+        {
+          "point": "Facilitates the popular 'Drop In' feature",
+          "frequency": 3
+        },
+        {
+          "point": "Allows for effective monitoring of security cameras",
+          "frequency": 3
+        }
+      ],
+      "verdict": "While not explicitly detailed, the camera's quality is implicitly praised through its enabling of highly popular and effective video calls, 'Drop In' features, and security camera monitoring, suggesting it meets user expectations for these functions."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        {
+          "point": "Easy setup process",
+          "frequency": 3
+        },
+        {
+          "point": "Easy to use, even for children and the elderly",
+          "frequency": 3
+        },
+        {
+          "point": "Popular as a gift due to its simplicity",
+          "frequency": 1
+        }
+      ],
+      "verdict": "The device is consistently lauded for its straightforward setup and intuitive ease of use, making it an ideal gift for all ages, including children and the elderly."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "Desire for external audio outputs",
+          "frequency": 1
+        },
+        {
+          "point": "Desire for a detachable power cable",
+          "frequency": 1
+        }
+      ],
+      "verdict": "There are no direct comments on the overall design or build quality, but some users have suggested minor hardware improvements such as external audio outputs and a detachable power cable."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "Seamless integration with other Echo products (implies good connectivity)",
+          "frequency": 1
+        },
+        {
+          "point": "Seamless integration with smart home devices (implies good connectivity)",
+          "frequency": 1
+        },
+        {
+          "point": "Growing capabilities in smart home integration (implies good connectivity)",
+          "frequency": 1
+        }
+      ],
+      "verdict": "Connectivity is not explicitly detailed but is implicitly positive through seamless integration with other Echo devices and various smart home products, suggesting reliable performance without specific praise or criticism."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        {
+          "point": "Users express strong satisfaction, love, and frequently give 5-star ratings",
+          "frequency": 3
+        },
+        {
+          "point": "Described as 'awesome', 'great', 'game changer', 'greatest gift EVER'",
+          "frequency": 2
+        },
+        {
+          "point": "Considered a significant/superior upgrade from screenless Echo devices",
+          "frequency": 3
+        },
+        {
+          "point": "Adds tremendous value to the home",
+          "frequency": 2
+        },
+        {
+          "point": "Widely recommended and often purchased as a gift",
+          "frequency": 2
+        },
+        {
+          "point": "Celebrated as a versatile, intuitive, and essential smart home assistant",
+          "frequency": 1
+        }
+      ],
+      "verdict": "Users overwhelmingly perceive the Amazon Echo Show as an excellent value, frequently describing it as a 'game changer' and a 'tremendous value.' It is highly recommended, often purchased as a gift, and seen as a superior and essential upgrade from screenless smart assistants."
+    }
+  ]
+}

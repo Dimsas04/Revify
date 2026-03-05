@@ -1,0 +1,215 @@
+{
+  "metrics": {
+    "chunk_size": 200,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T17:36:54.216141",
+    "summarization_time": 19.42,
+    "analysis_time": 28.27,
+    "total_time": 47.7,
+    "num_chunks": 2,
+    "tokens_estimate": 375,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.0779,
+    "rouge2_f1": 0.0217,
+    "rougeL_f1": 0.0363,
+    "bert_f1": 0.7343
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Mixed",
+      "key_points": [
+        {
+          "point": "Enhanced Alexa experience with visuals",
+          "count": 2
+        },
+        {
+          "point": "Provides visual information through Alexa",
+          "count": 2
+        },
+        {
+          "point": "Occasional voice recognition hiccups",
+          "count": 1
+        },
+        {
+          "point": "Acts as a personal assistant for lists and alarms",
+          "count": 1
+        },
+        {
+          "point": "Occasional sensitivity with alarm controls",
+          "count": 1
+        }
+      ],
+      "verdict": "Alexa's performance is significantly improved by the visual display, offering enhanced functionality for information and daily tasks. However, some users noted minor issues with voice recognition and alarm sensitivity."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "7-inch screen",
+          "count": 1
+        },
+        {
+          "point": "Significantly enhances Alexa experience with visuals",
+          "count": 2
+        },
+        {
+          "point": "Adds tremendous value to functionality",
+          "count": 1
+        },
+        {
+          "point": "Useful for recipes, song lyrics, news, weather, photos, traffic",
+          "count": 2
+        }
+      ],
+      "verdict": "The integrated screen is a major highlight, universally praised for adding significant value and visual richness to Alexa's capabilities, making it excellent for various information displays and entertainment."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Largely considered good sound quality",
+          "count": 2
+        },
+        {
+          "point": "Desire for improved speaker capabilities",
+          "count": 1
+        }
+      ],
+      "verdict": "Sound quality is generally good, satisfying most users, though a few express a desire for even more enhanced speaker performance."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Seamless integration with smart home devices",
+          "count": 2
+        },
+        {
+          "point": "Controls lights",
+          "count": 1
+        },
+        {
+          "point": "Controls security cameras (e.g., Ring, Arlo)",
+          "count": 2
+        },
+        {
+          "point": "Controls thermostats",
+          "count": 1
+        },
+        {
+          "point": "Convenience of hands-free monitoring and control",
+          "count": 1
+        }
+      ],
+      "verdict": "The Echo Show excels as a smart home hub, offering seamless integration and convenient hands-free control over various devices like lights, security cameras, and thermostats."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "No specific mention in reviews",
+          "count": 1
+        }
+      ],
+      "verdict": "User reviews do not contain specific feedback regarding privacy and security features."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Enables praised video calling functionality",
+          "count": 2
+        },
+        {
+          "point": "Enables praised intercom functionality / Drop In feature",
+          "count": 2
+        },
+        {
+          "point": "Popular for connecting with family, aiding elderly relatives",
+          "count": 2
+        }
+      ],
+      "verdict": "While not explicitly detailed for image quality, the camera's performance is implicitly highly praised through the consistent positive feedback on video calling and intercom features, highlighting its utility for family communication."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Generally easy to set up and use",
+          "count": 2
+        }
+      ],
+      "verdict": "Users consistently find the device easy and straightforward to set up and use, contributing to a positive initial experience."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "No specific mention in reviews",
+          "count": 1
+        }
+      ],
+      "verdict": "Reviewers do not explicitly comment on the design or build quality of the device."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "No specific mention in reviews",
+          "count": 1
+        }
+      ],
+      "verdict": "The reviews do not provide explicit feedback on Wifi or Bluetooth connectivity, but the overall seamless operation implies reliable performance."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Overwhelmingly positive feedback on overall product value",
+          "count": 2
+        },
+        {
+          "point": "Described as 'awesome', 'game changer', 'best Echo yet'",
+          "count": 1
+        },
+        {
+          "point": "Adds tremendous value to the home experience",
+          "count": 1
+        },
+        {
+          "point": "Highly recommended for versatility, entertainment, task simplification",
+          "count": 1
+        },
+        {
+          "point": "Highly useful, entertaining, and essential smart home device",
+          "count": 1
+        },
+        {
+          "point": "Frequently purchased as a well-received/cherished gift",
+          "count": 2
+        },
+        {
+          "point": "Lack of full YouTube support is a significant drawback for some",
+          "count": 2
+        },
+        {
+          "point": "Desire for more expansive internet video content",
+          "count": 1
+        }
+      ],
+      "verdict": "Despite minor drawbacks like limited YouTube support, users overwhelmingly consider the Echo Show to be an excellent value, praising its versatility, entertainment, and essential smart home utility, frequently making it a popular gift choice."
+    }
+  ]
+}

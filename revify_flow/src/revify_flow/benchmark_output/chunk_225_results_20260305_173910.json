@@ -1,0 +1,249 @@
+{
+  "metrics": {
+    "chunk_size": 225,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T17:38:20.571856",
+    "summarization_time": 17.75,
+    "analysis_time": 23.76,
+    "total_time": 41.51,
+    "num_chunks": 2,
+    "tokens_estimate": 336,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.0848,
+    "rouge2_f1": 0.0265,
+    "rougeL_f1": 0.042,
+    "bert_f1": 0.7362
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Alexa's responsiveness",
+          "count": 1
+        },
+        {
+          "point": "Strong integration with smart home devices",
+          "count": 1
+        }
+      ],
+      "verdict": "Users are highly satisfied with Alexa's responsiveness and its seamless integration capabilities, making it a powerful central hub for smart homes."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Mixed to Positive",
+      "key_points": [
+        {
+          "point": "7-inch screen is primary differentiator",
+          "count": 1
+        },
+        {
+          "point": "Most valued feature",
+          "count": 1
+        },
+        {
+          "point": "Enables hands-free video calls",
+          "count": 1
+        },
+        {
+          "point": "Drop In function for connecting with family",
+          "count": 1
+        },
+        {
+          "point": "Displays recipes in the kitchen",
+          "count": 1
+        },
+        {
+          "point": "Shows song lyrics",
+          "count": 1
+        },
+        {
+          "point": "Monitors security cameras",
+          "count": 1
+        },
+        {
+          "point": "Adds tremendous value",
+          "count": 1
+        },
+        {
+          "point": "Provides visual enhancements",
+          "count": 1
+        },
+        {
+          "point": "Best of all the Echo line due to screen",
+          "count": 1
+        },
+        {
+          "point": "Displays news and weather updates",
+          "count": 1
+        },
+        {
+          "point": "Disappointment over loss/lack of YouTube functionality",
+          "count": 2
+        },
+        {
+          "point": "YouTube crucial for video chatting and entertainment",
+          "count": 1
+        }
+      ],
+      "verdict": "The 7-inch display is widely considered the most valuable and differentiating feature, enhancing various functionalities from video calls and recipes to security monitoring. However, significant disappointment exists regarding the lack of YouTube support."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Mixed to Positive",
+      "key_points": [
+        {
+          "point": "Generally good to excellent sound quality for music",
+          "count": 1
+        },
+        {
+          "point": "Appreciation for sound quality",
+          "count": 1
+        },
+        {
+          "point": "Improved sound (compared to other Echo devices)",
+          "count": 1
+        },
+        {
+          "point": "Suggestions for further speaker improvements",
+          "count": 1
+        },
+        {
+          "point": "Desire for more bass in the audio",
+          "count": 1
+        }
+      ],
+      "verdict": "Sound quality is generally praised as good to excellent, especially for music, and is seen as an improvement over previous models. However, some users express a desire for further speaker enhancements, particularly more bass."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Strong integration with smart home devices",
+          "count": 1
+        },
+        {
+          "point": "Controls lights",
+          "count": 1
+        },
+        {
+          "point": "Controls thermostats",
+          "count": 1
+        },
+        {
+          "point": "Controls security systems",
+          "count": 1
+        },
+        {
+          "point": "Monitors security cameras",
+          "count": 1
+        }
+      ],
+      "verdict": "The device offers robust and seamless integration with a wide range of smart home devices, allowing users to effectively control and monitor their smart home ecosystem."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "Ability to monitor security cameras",
+          "count": 1
+        }
+      ],
+      "verdict": "While the ability to monitor security cameras is mentioned and valued, the reviews do not provide extensive feedback on dedicated privacy features or the device's overall security protocols."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Neutral",
+      "key_points": [
+        {
+          "point": "Enables hands-free video calls",
+          "count": 1
+        },
+        {
+          "point": "Used for monitoring security cameras",
+          "count": 1
+        }
+      ],
+      "verdict": "The camera's functionality for hands-free video calls and security monitoring is appreciated and used. However, the reviews do not offer specific comments or assessments regarding the actual image or video quality of the camera itself."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Positive",
+      "key_points": [
+        {
+          "point": "Ease of setup and use",
+          "count": 1
+        },
+        {
+          "point": "User-friendliness",
+          "count": 1
+        },
+        {
+          "point": "Popular for personal use",
+          "count": 1
+        },
+        {
+          "point": "Frequently purchased as a gift",
+          "count": 1
+        },
+        {
+          "point": "Beneficial for elderly relatives and children",
+          "count": 1
+        }
+      ],
+      "verdict": "Users highly commend the device for its ease of setup and intuitive user-friendliness, making it accessible and popular for all ages, including as a thoughtful gift."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Neutral",
+      "key_points": [],
+      "verdict": "The reviews do not provide specific feedback or detailed comments regarding the device's aesthetic design or its overall build quality."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Neutral",
+      "key_points": [],
+      "verdict": "The reviews do not explicitly mention or evaluate the performance, reliability, or any issues related to the device's Wifi or Bluetooth connectivity."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        {
+          "point": "Overwhelmingly positive feedback",
+          "count": 1
+        },
+        {
+          "point": "Awesome upgrade",
+          "count": 1
+        },
+        {
+          "point": "Game changer",
+          "count": 1
+        },
+        {
+          "point": "Adds tremendous value",
+          "count": 1
+        },
+        {
+          "point": "Often exceeds expectations",
+          "count": 1
+        },
+        {
+          "point": "Fun, useful, and versatile device",
+          "count": 1
+        },
+        {
+          "point": "Considered 'best of all the Echo line'",
+          "count": 1
+        }
+      ],
+      "verdict": "Users overwhelmingly perceive the Amazon Echo Show as an excellent value, frequently describing it as an 'awesome' and 'game changer' upgrade that adds significant value and often exceeds expectations, making it the preferred choice among Echo devices."
+    }
+  ]
+}

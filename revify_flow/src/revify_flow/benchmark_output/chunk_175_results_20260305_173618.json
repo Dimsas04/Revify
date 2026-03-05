@@ -1,0 +1,125 @@
+{
+  "metrics": {
+    "chunk_size": 175,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T17:35:29.473535",
+    "summarization_time": 22.67,
+    "analysis_time": 18.12,
+    "total_time": 40.79,
+    "num_chunks": 2,
+    "tokens_estimate": 945,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.1023,
+    "rouge2_f1": 0.035,
+    "rougeL_f1": 0.0465,
+    "bert_f1": 0.7682
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Mixed",
+      "key_points": [
+        "Enhances Alexa experience (1)",
+        "General Alexa functions (timers, reminders, questions, lists, stories) consistently valued (1)",
+        "Minor criticisms regarding Alexa's listening accuracy (1)",
+        "Perceived intelligence compared to Google (1)",
+        "Alexa can be 'very literal at times' (1)",
+        "Functions as a useful 'personal assistant' (1)"
+      ],
+      "verdict": "Alexa's core functionalities are highly valued, especially with the visual enhancements of the screen. However, there are minor criticisms concerning listening accuracy and occasional overly literal interpretations."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        "7-inch screen is the standout and most frequently praised feature (3)",
+        "Significantly enhances Alexa experience (enables video calls, recipes, song lyrics, visual weather/news, security camera feeds) (3)",
+        "Described as a 'great addition' or 'game changer' compared to screenless Echos (2)",
+        "Convenience and versatility provided by the screen are a huge hit (1)",
+        "One user mentioned the screen was 'smaller than I expected' (1)"
+      ],
+      "verdict": "The 7-inch screen is the Echo Show's most celebrated and distinguishing feature, overwhelmingly praised for its versatility in enhancing Alexa functions with visuals, despite one minor comment about its size."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Mixed to Positive",
+      "key_points": [
+        "Generally well-regarded (1)",
+        "Perceived improvement over other Echo devices (Echo Plus, original Echo) (2)",
+        "Ability to play music throughout the home using multiple Echo devices appreciated (1)",
+        "Lyrics display on screen is a popular bonus (1)",
+        "Suggestions for further improvement of speakers or Bluetooth capabilities (1)",
+        "One reviewer suggested the audio could use 'a bit more bass' (1)"
+      ],
+      "verdict": "Sound quality is generally praised as an improvement over previous Echo devices, with multi-room audio capabilities being a plus. However, some users still suggest minor improvements like more bass or better Bluetooth functionality."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        "Seamless integration with smart home devices (Philips Hue, Nest) (1)",
+        "Controlling lights, thermostats, TVs, and sound systems is a significant draw (2)",
+        "Often mentioned as a primary reason for purchase or desirable future integration (1)",
+        "Many see it as a 'smart home starter kit' (1)",
+        "Effortlessly manages smart home systems (1)"
+      ],
+      "verdict": "Smart home control is a major positive, with users highly appreciating its seamless integration and ability to manage various devices, often viewing it as a foundational smart home device."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Positive",
+      "key_points": [
+        "Ability to view on-demand security camera feeds (Arlo Pro, Amazon Cloud Camera, Ring) (2)"
+      ],
+      "verdict": "Users appreciate the Echo Show's ability to display security camera feeds on demand, enhancing home monitoring capabilities. No specific mentions of privacy settings or concerns were raised in the reviews."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        "Enables video calls for family communication (2)",
+        "'Drop In' feature is a key benefit (1)",
+        "Used for connecting with children and elderly relatives (1)",
+        "Absence of YouTube affects video chat for college kids (1 - negative impact due to platform, not camera quality)"
+      ],
+      "verdict": "While specific camera image quality isn't directly detailed, the camera's functionality for video calls (especially 'Drop In' for family communication) is a highly valued and frequently praised feature."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Overwhelmingly Positive",
+      "key_points": [
+        "Users find the device easy to set up (3)",
+        "Users find the device easy to use (3)",
+        "Highlights product's user-friendliness (1)",
+        "Described as 'plug n play' (1)"
+      ],
+      "verdict": "The device is consistently praised for its straightforward, user-friendly setup and ease of daily use."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Neutral",
+      "key_points": [],
+      "verdict": "The reviews do not explicitly address the design or build quality of the device, suggesting it is neither a significant positive nor a negative point for users."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Neutral to Slightly Negative",
+      "key_points": [
+        "Some users suggested speakers could have better Bluetooth capabilities (1)"
+      ],
+      "verdict": "While Wi-Fi connectivity is not mentioned, there is a minor suggestion from users regarding the improvement of Bluetooth capabilities."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Mixed to Positive",
+      "key_points": [
+        "Users frequently purchase multiple units (1)",
+        "Popular as a gift item (2)",
+        "One review mentioned a 'less than friendly price point' if not on sale (1)"
+      ],
+      "verdict": "Many users perceive the Echo Show as good value, often buying multiple units or gifting it. However, some find its price less appealing when not on sale."
+    }
+  ]
+}

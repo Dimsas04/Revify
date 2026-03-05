@@ -1,0 +1,118 @@
+{
+  "metrics": {
+    "chunk_size": 250,
+    "total_reviews": 250,
+    "run_timestamp": "2026-03-05T17:39:40.043812",
+    "summarization_time": 9.3,
+    "analysis_time": 16.82,
+    "total_time": 26.12,
+    "num_chunks": 1,
+    "tokens_estimate": 173,
+    "parsing_success": true
+  },
+  "scores": {
+    "rouge1_f1": 0.0832,
+    "rouge2_f1": 0.0237,
+    "rougeL_f1": 0.0398,
+    "bert_f1": 0.7632
+  },
+  "analysis": [
+    {
+      "feature": "Voice Assistant Performance (Alexa Integration)",
+      "sentiment": "Mixed",
+      "key_points": [
+        "Useful for general information (weather, news briefings, trivia): 1",
+        "Occasional minor critiques regarding voice recognition in noisy environments: 1"
+      ],
+      "verdict": "Generally praised for its utility in providing daily information, but some users reported minor issues with Alexa's voice recognition in noisy settings."
+    },
+    {
+      "feature": "Display Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        "7-inch screen is highly celebrated: 1",
+        "Enhances functionality: 1",
+        "Useful for video calls (especially 'Drop In' for family and elderly parents): 1",
+        "Displays recipes hands-free in the kitchen: 1",
+        "Shows song lyrics: 1",
+        "Offers real-time viewing from security cameras (like Arlo Pro, Ring): 1"
+      ],
+      "verdict": "The 7-inch screen is a standout feature, overwhelmingly praised for significantly enhancing functionality across communication, entertainment, and smart home monitoring."
+    },
+    {
+      "feature": "Sound Quality",
+      "sentiment": "Mixed",
+      "key_points": [
+        "Many found the sound good: 1",
+        "Some expressed a desire for better speaker quality: 1"
+      ],
+      "verdict": "Sound quality received mixed feedback, with many users finding it good, but a segment desiring improvements for better speaker quality."
+    },
+    {
+      "feature": "Smart Home Control Capabilities",
+      "sentiment": "Positive",
+      "key_points": [
+        "Functions as a smart home hub: 1",
+        "Effective for controlling lights: 1",
+        "Effective for controlling thermostats: 1"
+      ],
+      "verdict": "Users highly value its effective capabilities as a smart home hub for seamlessly controlling lights and thermostats."
+    },
+    {
+      "feature": "Privacy and Security Features",
+      "sentiment": "Neutral",
+      "key_points": [
+        "No direct mentions of the Echo Show's inherent privacy or security features (e.g., camera shutter, microphone mute, data handling policies): 1",
+        "Ability to display real-time feeds from third-party security cameras (e.g., Arlo Pro, Ring) is mentioned as a use case: 1"
+      ],
+      "verdict": "The reviews do not specifically address the Echo Show's internal privacy and security features, although its capability to integrate with and display feeds from external security cameras is highlighted."
+    },
+    {
+      "feature": "Camera Quality",
+      "sentiment": "Positive",
+      "key_points": [
+        "Enables effective video calls: 1",
+        "Useful for 'Drop In' feature for family and elderly parents: 1"
+      ],
+      "verdict": "While not explicitly detailed, the camera's performance is positively implied through its successful and valued use for video calls and the 'Drop In' feature."
+    },
+    {
+      "feature": "Ease of Setup and Use",
+      "sentiment": "Positive",
+      "key_points": [
+        "Easy setup: 1",
+        "Easy to use: 1"
+      ],
+      "verdict": "Users consistently highlight the product's straightforward setup and user-friendly operation as a significant and highly valued benefit."
+    },
+    {
+      "feature": "Design and Build Quality",
+      "sentiment": "Neutral",
+      "key_points": [
+        "No specific details or critiques regarding the physical design, aesthetics, or material quality are provided: 1",
+        "Overall positive reception ('awesome,' 'great,' 'amazing') implies general satisfaction with the complete product, which typically includes design: 1"
+      ],
+      "verdict": "Specific feedback on the product's design and build quality is absent from the reviews, though the overwhelmingly positive sentiment for the device as a whole suggests general satisfaction."
+    },
+    {
+      "feature": "Connectivity (Wifi and Bluetooth)",
+      "sentiment": "Neutral",
+      "key_points": [
+        "No specific praise, issues, or details regarding Wi-Fi or Bluetooth performance are mentioned: 1",
+        "The core functionalities (video calls, streaming, smart home control) implicitly rely on stable connectivity, suggesting it generally performs adequately without being a point of concern or exceptional praise: 1"
+      ],
+      "verdict": "Reviews do not explicitly comment on the performance or reliability of Wi-Fi or Bluetooth connectivity, indicating it likely functions as expected without notable issues or standout performance."
+    },
+    {
+      "feature": "Value for Money",
+      "sentiment": "Positive",
+      "key_points": [
+        "Considered a significant upgrade from other Echo devices: 1",
+        "Found to be both 'entertaining and useful': 1",
+        "Popular gift choice: 1",
+        "Strong overall satisfaction: 1"
+      ],
+      "verdict": "Users perceive the product as offering excellent value, considering it a worthwhile upgrade, highly entertaining and useful, and a popular gift choice."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "benchmark_info": {
+    "reviews_file": "benchmark_reviews_100.csv",
+    "chunk_sizes": [
+      100,
+      10,
+      25
+    ],
+    "features": [
+      "Voice Assistant Performance (Alexa Integration)",
+      "Display Quality",
+      "Sound Quality",
+      "Smart Home Control Capabilities",
+      "Privacy and Security Features",
+      "Camera Quality",
+      "Ease of Setup and Use",
+      "Design and Build Quality",
+      "Connectivity (Wifi and Bluetooth)",
+      "Value for Money"
+    ],
+    "total_reviews": 100,
+    "benchmark_date": "2026-03-06T23:38:20.419302",
+    "reference_chunk_size": 100
+  },
+  "insight_files": [
+    {
+      "chunk_size": 100,
+      "file": "benchmark_output/chunk_100_feature_insights_20260306_233059.json",
+      "num_features": 10
+    },
+    {
+      "chunk_size": 10,
+      "file": "benchmark_output/chunk_10_feature_insights_20260306_233457.json",
+      "num_features": 10
+    },
+    {
+      "chunk_size": 25,
+      "file": "benchmark_output/chunk_25_feature_insights_20260306_233706.json",
+      "num_features": 0
+    }
+  ],
+  "quality_metrics": {
+    "10": {
+      "rouge1_precision": 0.3658310120705664,
+      "rouge1_recall": 0.7378277153558053,
+      "rouge1_fmeasure": 0.4891371818746121,
+      "rouge2_precision": 0.1607806691449814,
+      "rouge2_recall": 0.324577861163227,
+      "rouge2_fmeasure": 0.21504039776258543,
+      "rougeL_precision": 0.22098421541318478,
+      "rougeL_recall": 0.44569288389513106,
+      "rougeL_fmeasure": 0.2954686530105524,
+      "bertscore_precision": 0.7839533090591431,
+      "bertscore_recall": 0.7609083652496338,
+      "bertscore_f1": 0.7722589373588562
+    },
+    "25": {
+      "rouge1_precision": 0.0,
+      "rouge1_recall": 0.0,
+      "rouge1_fmeasure": 0.0,
+      "rouge2_precision": 0.0,
+      "rouge2_recall": 0.0,
+      "rouge2_fmeasure": 0.0,
+      "rougeL_precision": 0,
+      "rougeL_recall": 0,
+      "rougeL_fmeasure": 0,
+      "bertscore_precision": 0.9994135499000549,
+      "bertscore_recall": 0.1461472511291504,
+      "bertscore_f1": 0.2550044357776642
+    }
+  }
+}

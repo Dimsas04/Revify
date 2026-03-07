@@ -1,0 +1,16 @@
+{
+  "metrics": {
+    "chunk_size": 25,
+    "total_reviews": 100,
+    "start_time": "2026-03-06T23:35:57.374899",
+    "summarization_time": 40.8603732585907,
+    "analysis_time": 28.303261518478394,
+    "total_time": 69.16461896896362,
+    "num_chunks": 4,
+    "tokens_estimate": 704,
+    "end_time": "2026-03-06T23:37:06.539524",
+    "parsing_success": false,
+    "parsing_error": "Expecting ',' delimiter: line 6 column 40 (char 157)"
+  },
+  "analysis": []
+}

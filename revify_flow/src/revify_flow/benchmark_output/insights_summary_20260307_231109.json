@@ -1,0 +1,52 @@
+{
+  "benchmark_info": {
+    "reviews_file": "benchmark_reviews_500.csv",
+    "chunk_sizes": [
+      100,
+      250
+    ],
+    "features": [
+      "Voice Assistant Performance (Alexa Integration)",
+      "Display Quality",
+      "Sound Quality",
+      "Smart Home Control Capabilities",
+      "Privacy and Security Features",
+      "Camera Quality",
+      "Ease of Setup and Use",
+      "Design and Build Quality",
+      "Connectivity (Wifi and Bluetooth)",
+      "Value for Money"
+    ],
+    "total_reviews": 500,
+    "benchmark_date": "2026-03-07T23:11:09.251743",
+    "reference_chunk_size": 250
+  },
+  "insight_files": [
+    {
+      "chunk_size": 100,
+      "file": "benchmark_output/chunk_100_feature_insights_20260307_230733.json",
+      "num_features": 10
+    },
+    {
+      "chunk_size": 250,
+      "file": "benchmark_output/chunk_250_feature_insights_20260307_230955.json",
+      "num_features": 10
+    }
+  ],
+  "quality_metrics": {
+    "100": {
+      "rouge1_precision": 0.5194123819517313,
+      "rouge1_recall": 0.717391304347826,
+      "rouge1_fmeasure": 0.6025562994522216,
+      "rouge2_precision": 0.24894957983193278,
+      "rouge2_recall": 0.3439767779390421,
+      "rouge2_fmeasure": 0.2888482632541133,
+      "rougeL_precision": 0.30535152151101785,
+      "rougeL_recall": 0.4217391304347826,
+      "rougeL_fmeasure": 0.3542300669507,
+      "bertscore_precision": 0.8707245588302612,
+      "bertscore_recall": 0.8749508261680603,
+      "bertscore_f1": 0.8728325963020325
+    }
+  }
+}

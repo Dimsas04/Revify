@@ -1,0 +1,32 @@
+user_intent:
+  raw_request: "Improve the existing scraper so it runs in the background and completes faster; compare Playwright and Apify before choosing an implementation."
+  inferred_acceptance:
+    - "Scraping does not block the HTTP request."
+    - "Scraping latency and reliability improve without changing review fields consumed by analysis."
+    - "The implementation choice is evidence-based and can be measured against the current scraper."
+  cleanup_required: false
+strategy: phased
+runtime_reachable:
+  - revify_flow/src/revify_flow/api.py
+  - revify_flow/src/revify_flow/tools/amazon_scraper_tool.py
+  - revify_flow/src/revify_flow/crews/team_revify/team_revify.py
+must_rewrite:
+  - path: revify_flow/src/revify_flow/api.py
+    reason: "Current background work is an in-process daemon thread with global mutable status and a shared CSV."
+  - path: revify_flow/src/revify_flow/tools/amazon_scraper_tool.py
+    reason: "Current scraper owns browser startup, login, navigation, fixed sleeps, page extraction, debug-file writes, and CSV output."
+copy_as_is:
+  - revify_flow/src/revify_flow/crews/team_revify/team_revify.py
+  - revify_flow/src/revify_flow/main.py
+legacy_allowed_to_remain:
+  - scrapper.py
+  - altScrapper.py
+  - sidScraper.py
+  - bhai.py
+  - ninja.py
+defer_cleanup:
+  - "Remove experimental scraper scripts after the production scraper path is benchmarked and selected."
+full_rewrite_reason: null
+implementation_rule: >
+  Benchmark and implementation work must use must_rewrite as the scope. The legacy
+  experimental scripts are evidence only and are not automatic rewrite targets.

@@ -545,20 +545,39 @@ class AmazonScraperTool(BaseTool):
 
     def _perform_scraping(self, url: str, target_reviews):
         """Internal method to handle the actual scraping logic with undetected_chromedriver"""
-        driver = self._setup_driver()
+        driver = None
         review_titles = []
         reviews = []
         ratings = []
 
         try:
+            driver = self._setup_driver()
             logger.info(f"Opening URL: {url}")
             print(f"Opening URL: {url}")
             driver.get(url)
 
             # ---------------- OPEN REVIEWS PAGE ---------------- #
-            WebDriverWait(driver, 20).until(
-                EC.element_to_be_clickable((By.XPATH, '//*[@id="reviews-medley-footer"]/div[2]/a'))
-            ).click()
+            try:
+                WebDriverWait(driver, 20).until(
+                    EC.element_to_be_clickable((By.XPATH, '//*[@id="reviews-medley-footer"]/div[2]/a'))
+                ).click()
+            except TimeoutException:
+                # Amazon frequently omits or changes this link on consent,
+                # regional, and anti-bot pages. Navigate directly when the
+                # product ASIN is available.
+                asin_match = re.search(r"/dp/([A-Z0-9]{10})(?:[/?]|$)", url, re.IGNORECASE)
+                if not asin_match:
+                    raise TimeoutException(
+                        "Amazon reviews link was not found and the product URL has no 10-character ASIN"
+                    )
+                reviews_url = (
+                    f"https://{url.split('/')[2]}/product-reviews/"
+                    f"{asin_match.group(1)}"
+                )
+                logger.warning(
+                    "Reviews link not found; navigating directly to %s", reviews_url
+                )
+                driver.get(reviews_url)
 
             # ---------------- LOGIN SECTION ---------------- #
             try:
@@ -696,26 +715,22 @@ class AmazonScraperTool(BaseTool):
             print(f"✅ Scraping completed successfully! Retrieved {len(reviews)} reviews.")
             
         except Exception as e:
-            logger.error(f"❌ Error during scraping: {e}", exc_info=True)
-            print(f"❌ Error during scraping: {e}")
+            logger.error("❌ Error during scraping: %s", e, exc_info=True)
+            print(f"❌ Error during scraping: {type(e).__name__}: {e}")
             raise
         finally:
-            # Properly close the driver to avoid handle errors
-            try:
-                if driver:
-                    # Close browser windows first
-                    driver.close()
-                    # Stop the ChromeDriver service
-                    if hasattr(driver, 'service') and driver.service:
-                        driver.service.stop()
-                    # Finally quit
+            if driver is not None:
+                try:
+                    # quit() owns both browser and driver-service shutdown. Calling
+                    # service.stop() first leaves an invalid Windows process handle.
                     driver.quit()
-            except (OSError, Exception) as e:
-                # Suppress the WinError 6 handle error - it's harmless
-                if "WinError 6" not in str(e) and "handle is invalid" not in str(e):
-                    logger.error(f"⚠️ Error closing driver: {e}")
-                    print(f"⚠️ Error closing driver: {e}")
-                pass
+                except OSError as e:
+                    # Chrome may already have exited after a crash; do not hide
+                    # the original scraping exception in that case.
+                    if "WinError 6" not in str(e) and "handle is invalid" not in str(e).lower():
+                        logger.warning("⚠️ Error closing driver: %s", e)
+                except Exception as e:
+                    logger.warning("⚠️ Error closing driver: %s", e)
         
         # Limit to target_reviews in case we got more
         return review_titles[:target_reviews], reviews[:target_reviews], ratings[:target_reviews]

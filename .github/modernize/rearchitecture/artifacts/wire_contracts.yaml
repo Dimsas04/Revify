@@ -1,0 +1,68 @@
+contracts:
+  - name: feature-extraction-start
+    unit: extract-features
+    type: rest
+    stability: must_preserve
+    source_loc: "revify_flow/src/revify_flow/api.py:663"
+    contract:
+      method: "POST"
+      path: "/api/extract-features"
+      request: "{product_url: string, product_name?: string}"
+      response: "{message: string, status: 'running'}"
+      error: "400 when product_url is absent; 409 when extraction is already running"
+      auth: ""
+    target_contract:
+      method: "POST /api/extract-features -> 202 {message,status,job_id?}"
+      notes: "Any job identifier addition must remain backward compatible with existing polling clients."
+    semantic_divergence: []
+
+  - name: feature-extraction-status
+    unit: extract-features
+    type: rest
+    stability: must_preserve
+    source_loc: "revify_flow/src/revify_flow/api.py:700"
+    contract:
+      method: "GET"
+      path: "/api/feature-status"
+      request: ""
+      response: "{is_running, completed, error, reviews_ready, features?, total_count?}"
+      error: "JSON status object; errors are represented by error field"
+      auth: ""
+    target_contract:
+      method: "GET /api/feature-status -> status object"
+      notes: "Keep feature availability independent from review readiness."
+    semantic_divergence: []
+
+  - name: analysis-start
+    unit: analyze-product
+    type: rest
+    stability: must_preserve
+    source_loc: "revify_flow/src/revify_flow/api.py:729"
+    contract:
+      method: "POST"
+      path: "/api/analyze"
+      request: "{product_url: string, product_name?: string, selected_features?: string[]}"
+      response: "{message: string, status: 'running', features_count: number|string}"
+      error: "400 when product_url is absent; 409 when another analysis is running"
+      auth: ""
+    target_contract:
+      method: "POST /api/analyze -> 202 {message,status,features_count,job_id?}"
+      notes: "Selected features must continue to reuse reviews for the same product when available."
+    semantic_divergence: []
+
+  - name: review-csv
+    unit: scraper-tool
+    type: file
+    stability: frozen
+    source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:759"
+    contract:
+      method: "write"
+      path: "scraped_reviews.csv"
+      request: "titles, review bodies, ratings, product name"
+      response: "CSV columns consumed by api.py: name, brand, reviews.rating, reviews.title, reviews.text"
+      error: "missing or empty file is treated as scraping failure"
+      auth: ""
+    target_contract:
+      method: "ReviewRecord[] -> repository; compatibility adapter may emit existing CSV columns"
+      notes: "The analysis pipeline must not read a partially written file or another job's file."
+    semantic_divergence: []

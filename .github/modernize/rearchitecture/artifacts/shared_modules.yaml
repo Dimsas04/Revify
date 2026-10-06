@@ -1,0 +1,18 @@
+modules:
+  - name: review-csv
+    kind: store
+    source_loc: "scraped_reviews.csv"
+    used_by_units: [extract-features, analyze-product, scraper-tool]
+    fields:
+      - name: write
+        type: "ReviewRecord[] -> CSV"
+      - name: read
+        type: "CSV -> pandas.DataFrame"
+      - name: product_url
+        type: "str"
+      - name: reviews_cached
+        type: "bool"
+    god_class: false
+    split_candidate: true
+    migration_strategy: wrap
+    notes: "Process-wide file and cache flags couple concurrent jobs; wrap behind a job-scoped review store."

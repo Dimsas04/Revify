@@ -1,0 +1,61 @@
+units:
+  - name: extract-features
+    trigger: api
+    trigger_detail: "POST /api/extract-features"
+    source_anchors:
+      - path: revify_flow/src/revify_flow/api.py
+        line: 663
+    exported_signature:
+      - method: "HTTP POST /api/extract-features -> {message,status}"
+        source_loc: "revify_flow/src/revify_flow/api.py:663"
+        stability: must_preserve
+    dynamic_entrypoints:
+      - target: "run_feature_extraction_async"
+        mechanism: convention
+        source_loc: "revify_flow/src/revify_flow/api.py:594"
+    depends_on:
+      - unit: scraper-tool
+        via: "scrape_reviews_parallel"
+    shared_refs:
+      - module: review-csv
+        used_fields: [write, product_url, reviews_ready]
+
+  - name: analyze-product
+    trigger: api
+    trigger_detail: "POST /api/analyze"
+    source_anchors:
+      - path: revify_flow/src/revify_flow/api.py
+        line: 729
+    exported_signature:
+      - method: "HTTP POST /api/analyze -> {message,status,features_count}"
+        source_loc: "revify_flow/src/revify_flow/api.py:729"
+        stability: must_preserve
+    dynamic_entrypoints:
+      - target: "run_analysis_workflow_optimized"
+        mechanism: convention
+        source_loc: "revify_flow/src/revify_flow/api.py:743"
+    depends_on:
+      - unit: scraper-tool
+        via: "scrape_reviews_parallel"
+    shared_refs:
+      - module: review-csv
+        used_fields: [read, product_url, reviews_cached]
+
+  - name: scraper-tool
+    trigger: api
+    trigger_detail: "CrewAI tool invocation from review scraper agent"
+    source_anchors:
+      - path: revify_flow/src/revify_flow/tools/amazon_scraper_tool.py
+        line: 473
+    exported_signature:
+      - method: "AmazonScraperTool._run(url: str, target_reviews: int, product_name: Optional[str]) -> str"
+        source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:508"
+        stability: must_preserve
+    dynamic_entrypoints:
+      - target: "AmazonScraperTool"
+        mechanism: di
+        source_loc: "revify_flow/src/revify_flow/crews/team_revify/team_revify.py:19"
+    depends_on: []
+    shared_refs:
+      - module: review-csv
+        used_fields: [write]

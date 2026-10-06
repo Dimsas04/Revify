@@ -1,0 +1,9 @@
+unit: analyze-product
+bindings:
+  - type: route-declaration
+    name: "POST /api/analyze"
+    source_loc: "revify_flow/src/revify_flow/api.py:729"
+    target: "analyze_product"
+    must_appear_in_target: true
+    notes: "Rejects overlapping analysis with HTTP 409."
+runtime_config: []

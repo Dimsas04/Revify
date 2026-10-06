@@ -1,0 +1,30 @@
+flows:
+  - name: feature-job-to-analysis-cache
+    medium: static
+    key: "analysis_status.reviews_cached / cached_product_url"
+    writer:
+      unit: extract-features
+      source_loc: "revify_flow/src/revify_flow/api.py:648"
+    reader:
+      unit: analyze-product
+      source_loc: "revify_flow/src/revify_flow/api.py:268"
+    pairing: matched
+    must_preserve: true
+    must_confirm: null
+    verification_hint: "Start two products in overlapping sessions and verify no job consumes the other product's reviews."
+    notes: "Global mutable state is process-local and not safe for multiple workers or concurrent users."
+
+  - name: scraper-output-to-analysis
+    medium: file
+    key: "scraped_reviews.csv"
+    writer:
+      unit: scraper-tool
+      source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:759"
+    reader:
+      unit: analyze-product
+      source_loc: "revify_flow/src/revify_flow/api.py:271"
+    pairing: matched
+    must_preserve: true
+    must_confirm: null
+    verification_hint: "Verify atomic publication and product/job ownership of review records."
+    notes: "A single fixed filename permits races and stale reads."

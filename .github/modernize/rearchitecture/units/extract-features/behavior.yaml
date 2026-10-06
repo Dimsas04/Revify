@@ -1,0 +1,26 @@
+unit: extract-features
+side_effects:
+  - source_loc: "revify_flow/src/revify_flow/api.py:594"
+    effect: "Starts feature extraction and review scraping in background threads."
+    must_preserve: true
+  - source_loc: "revify_flow/src/revify_flow/api.py:648"
+    effect: "Publishes scraped reviews and marks reviews_ready for later analysis."
+    must_preserve: true
+branches:
+  - source_loc: "revify_flow/src/revify_flow/api.py:614"
+    condition: "features arrive before scraping completes"
+    behavior: "Feature status becomes completed while review scraping continues."
+    must_preserve: true
+error_paths:
+  - source_loc: "revify_flow/src/revify_flow/api.py:644"
+    trigger: "Feature extraction or scraping raises an exception."
+    outcome: "Status exposes error and marks the background operation not running."
+    contract: "JSON status object with error field"
+    must_preserve: true
+concurrency:
+  model: thread-pool
+  tx_boundary:
+    source_loc: "revify_flow/src/revify_flow/api.py:594"
+    scope: "No database transaction; feature and scraper threads share process-global state and a fixed CSV."
+    isolation: ""
+    must_preserve: true

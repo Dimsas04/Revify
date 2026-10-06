@@ -14,7 +14,7 @@ from IPython.display import Image, display
 import os
 import cv2
 import numpy as np
-from scrapper import scraping, is_valid_url
+from old_code.scrapper import scraping, is_valid_url
 
 
 # Load environment variables

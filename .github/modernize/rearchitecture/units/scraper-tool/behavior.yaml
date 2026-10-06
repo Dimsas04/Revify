@@ -1,0 +1,38 @@
+unit: scraper-tool
+side_effects:
+  - source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:532"
+    effect: "Starts a browser session and navigates to the supplied Amazon URL."
+    must_preserve: true
+  - source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:651"
+    effect: "Collects review title, body, and rating records page by page."
+    must_preserve: true
+  - source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:759"
+    effect: "Writes compatibility CSV output consumed by the analysis API."
+    must_preserve: true
+branches:
+  - source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:597"
+    condition: "CAPTCHA or 2FA detected"
+    behavior: "Pause for manual completion and then continue."
+    must_preserve: true
+  - source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:696"
+    condition: "Target review count reached or next page unavailable"
+    behavior: "Stop pagination and return at most target_reviews records."
+    must_preserve: true
+error_paths:
+  - source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:522"
+    trigger: "Credentials are missing."
+    outcome: "Return an error string without scraping."
+    contract: "CrewAI tool result string beginning with Error"
+    must_preserve: true
+  - source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:718"
+    trigger: "Browser or navigation failure."
+    outcome: "Log and re-raise; caller reports scraping failure."
+    contract: "Exception propagated to scraper worker"
+    must_preserve: true
+concurrency:
+  model: sync
+  tx_boundary:
+    source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:523"
+    scope: "One browser session performs login/navigation/pagination and publishes one fixed CSV."
+    isolation: ""
+    must_preserve: true

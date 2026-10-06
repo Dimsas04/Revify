@@ -1,0 +1,7 @@
+unit: analyze-product
+commit: false
+candidate_splits:
+  - id: "revify_flow/src/revify_flow/api.py:246-443"
+    drivers: [concern_split, execution_model_split]
+    rationale: "The workflow combines job lifecycle, review loading, LLM chunk summarization, final analysis, JSON recovery, and result publication."
+    source_slice: {file: "revify_flow/src/revify_flow/api.py", lines: [246, 443]}

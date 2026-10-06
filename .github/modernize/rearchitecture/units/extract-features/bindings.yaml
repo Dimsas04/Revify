@@ -1,0 +1,9 @@
+unit: extract-features
+bindings:
+  - type: route-declaration
+    name: "POST /api/extract-features"
+    source_loc: "revify_flow/src/revify_flow/api.py:663"
+    target: "extract_features_only"
+    must_appear_in_target: true
+    notes: "Starts background work and returns without waiting for scraping."
+runtime_config: []

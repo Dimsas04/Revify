@@ -1,0 +1,26 @@
+unit: analyze-product
+side_effects:
+  - source_loc: "revify_flow/src/revify_flow/api.py:268"
+    effect: "Reads cached reviews for the same product when available."
+    must_preserve: true
+  - source_loc: "revify_flow/src/revify_flow/api.py:353"
+    effect: "Runs summarization and final feature analysis, then writes a JSON result."
+    must_preserve: true
+branches:
+  - source_loc: "revify_flow/src/revify_flow/api.py:252"
+    condition: "selected_features supplied"
+    behavior: "Use selected features and cached reviews or scrape reviews if cache is unavailable."
+    must_preserve: true
+error_paths:
+  - source_loc: "revify_flow/src/revify_flow/api.py:329"
+    trigger: "Feature extraction fails or reviews are missing/empty."
+    outcome: "Analysis fails and status exposes an error."
+    contract: "JSON status object with error field"
+    must_preserve: true
+concurrency:
+  model: thread-pool
+  tx_boundary:
+    source_loc: "revify_flow/src/revify_flow/api.py:743"
+    scope: "One daemon thread runs the complete analysis workflow; review cache is process-global."
+    isolation: ""
+    must_preserve: true

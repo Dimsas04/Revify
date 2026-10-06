@@ -1,0 +1,7 @@
+unit: scraper-tool
+commit: false
+candidate_splits:
+  - id: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:508-764"
+    drivers: [concern_split, execution_model_split, reuse_split]
+    rationale: "Browser acquisition, authentication, pagination, extraction, persistence, and tool adaptation are separate concerns with different replacement options."
+    source_slice: {file: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py", lines: [508, 764]}

@@ -1,0 +1,21 @@
+unit: scraper-tool
+bindings:
+  - type: di-registration
+    name: "AmazonScraperTool"
+    source_loc: "revify_flow/src/revify_flow/crews/team_revify/team_revify.py:19"
+    target: "TeamRevify._scraper_tool"
+    must_appear_in_target: true
+    notes: "CrewAI agent receives the scraper as a tool."
+runtime_config:
+  - key: "NUMBER"
+    source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:493"
+    source: env
+    default_value: ""
+    must_appear_in_target: true
+    notes: "Amazon login username/phone."
+  - key: "PASSWORD"
+    source_loc: "revify_flow/src/revify_flow/tools/amazon_scraper_tool.py:494"
+    source: env
+    default_value: ""
+    must_appear_in_target: true
+    notes: "Amazon login password."

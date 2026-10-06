@@ -1,0 +1,880 @@
+[
+  {
+    "feature": "Voice Assistant Performance (Alexa Integration)",
+    "sentiment": "Positive",
+    "key_points": [
+      {
+        "point": "Alexa is awesome/AWESOME!",
+        "count": 13
+      },
+      {
+        "point": "Alexa always answers when I say the commands",
+        "count": 2
+      },
+      {
+        "point": "Alexa is 95% right with any command",
+        "count": 1
+      },
+      {
+        "point": "Always ready with answers",
+        "count": 1
+      },
+      {
+        "point": "Microphone picks up voice easily",
+        "count": 2
+      },
+      {
+        "point": "Hears your voice very good",
+        "count": 2
+      },
+      {
+        "point": "Good at responding",
+        "count": 1
+      },
+      {
+        "point": "Works great",
+        "count": 6
+      },
+      {
+        "point": "Love Alexa",
+        "count": 10
+      },
+      {
+        "point": "Alexa is very entertaining/fun",
+        "count": 7
+      },
+      {
+        "point": "Alexa is helpful/great help",
+        "count": 6
+      },
+      {
+        "point": "Answers almost every question",
+        "count": 2
+      },
+      {
+        "point": "Kids love talking to Alexa/uses it for homework",
+        "count": 4
+      },
+      {
+        "point": "Answers questions immediately",
+        "count": 1
+      },
+      {
+        "point": "Voice activated",
+        "count": 1
+      },
+      {
+        "point": "A.I. is better than Apple and Google versions",
+        "count": 1
+      },
+      {
+        "point": "Eight far-field microphones are more effective than Echo",
+        "count": 1
+      },
+      {
+        "point": "Alexa is learning what our family likes",
+        "count": 1
+      },
+      {
+        "point": "Excellent at hearing varying voices and responding",
+        "count": 1
+      },
+      {
+        "point": "Alexa is years ahead of Siri",
+        "count": 1
+      },
+      {
+        "point": "Fun and useful/very interactive",
+        "count": 4
+      },
+      {
+        "point": "Worthwhile for daily routines/traffic/news",
+        "count": 1
+      },
+      {
+        "point": "Great product, everyone needs one",
+        "count": 1
+      },
+      {
+        "point": "Wealth of information",
+        "count": 1
+      },
+      {
+        "point": "Great personal assistant/DJ/weatherman/news person",
+        "count": 1
+      },
+      {
+        "point": "Makes mornings easier",
+        "count": 1
+      },
+      {
+        "point": "Easy to communicate",
+        "count": 1
+      },
+      {
+        "point": "Plays any music you request",
+        "count": 2
+      }
+    ],
+    "verdict": "The Voice Assistant Performance, particularly Alexa's integration, is overwhelmingly positive. Users frequently describe Alexa as 'awesome,' 'helpful,' and 'entertaining,' noting her ability to consistently answer commands and provide information accurately. The microphone's ability to pick up voices easily is a common praise. Many highlight its usefulness for daily routines, answering questions, and even assisting with homework, with some noting it's superior to other AI assistants. The device is seen as a 'great personal assistant' and 'fun' for the whole family."
+  },
+  {
+    "feature": "Display Quality",
+    "sentiment": "Positive",
+    "key_points": [
+      {
+        "point": "HD video/associated video or text",
+        "count": 1
+      },
+      {
+        "point": "Can show movie trailers, Amazon video",
+        "count": 1
+      },
+      {
+        "point": "Love the fact I can see things on the screen",
+        "count": 2
+      },
+      {
+        "point": "Nice to see things on the screen/screen is great",
+        "count": 14
+      },
+      {
+        "point": "Love the video screen",
+        "count": 4
+      },
+      {
+        "point": "Video display is bright",
+        "count": 1
+      },
+      {
+        "point": "Screen is really nice/great for videos",
+        "count": 2
+      },
+      {
+        "point": "High resolution 7\" screen is perfect",
+        "count": 1
+      },
+      {
+        "point": "Excellent resolution with built-in camera",
+        "count": 1
+      },
+      {
+        "point": "Display is very nice",
+        "count": 1
+      },
+      {
+        "point": "Screen is bright and sharp",
+        "count": 1
+      },
+      {
+        "point": "Great picture and good size for a desk",
+        "count": 1
+      },
+      {
+        "point": "Love the visuals/visual effect",
+        "count": 3
+      },
+      {
+        "point": "Display is very vivid and clear",
+        "count": 1
+      },
+      {
+        "point": "Video quality is great/amazing",
+        "count": 2
+      },
+      {
+        "point": "Love the screen feature",
+        "count": 2
+      },
+      {
+        "point": "Screen outstanding",
+        "count": 1
+      },
+      {
+        "point": "Screen adds tremendous value",
+        "count": 1
+      },
+      {
+        "point": "Love the way it looks",
+        "count": 1
+      },
+      {
+        "point": "Screen makes Alexa better",
+        "count": 1
+      },
+      {
+        "point": "Picture quality is not bad/good",
+        "count": 2
+      },
+      {
+        "point": "Clear and easy to view",
+        "count": 1
+      },
+      {
+        "point": "Visuals entice utilizing the product",
+        "count": 1
+      },
+      {
+        "point": "Screen is beautiful",
+        "count": 1
+      },
+      {
+        "point": "The display version of Alexa is loved",
+        "count": 1
+      },
+      {
+        "point": "Great for looking up recipes",
+        "count": 2
+      },
+      {
+        "point": "Great for visuals of requests",
+        "count": 1
+      }
+    ],
+    "verdict": "The Display Quality of the Echo Show is highly praised by users. Many appreciate the ability to 'see things on the screen,' including HD video, movie trailers, Amazon video, and associated text. The screen is described as 'bright,' 'sharp,' 'vivid,' and 'clear,' with 'excellent resolution.' Users find the 7-inch screen size perfect for various uses, such as on a desk or in the kitchen, and it adds 'tremendous value' to the Alexa experience, especially for viewing recipes, news, and song lyrics. The visuals are seen as a significant enhancement, making the product more engaging and user-friendly."
+  },
+  {
+    "feature": "Sound Quality",
+    "sentiment": "Positive",
+    "key_points": [
+      {
+        "point": "Good sound",
+        "count": 4
+      },
+      {
+        "point": "Sound quality is great",
+        "count": 2
+      },
+      {
+        "point": "Awesome sound",
+        "count": 2
+      },
+      {
+        "point": "Sounds pretty decent for a countertop device",
+        "count": 1
+      },
+      {
+        "point": "Excellent sound",
+        "count": 1
+      },
+      {
+        "point": "Superb sound quality",
+        "count": 2
+      },
+      {
+        "point": "Great sound for a limited area",
+        "count": 1
+      },
+      {
+        "point": "Best sound quality of any Echo to date, with stronger bass, directional stereo, Dolby Audio",
+        "count": 1
+      },
+      {
+        "point": "Sound fills the room nicely",
+        "count": 1
+      },
+      {
+        "point": "Good sound for playing music",
+        "count": 3
+      },
+      {
+        "point": "Speakers sound good",
+        "count": 1
+      },
+      {
+        "point": "Speakers sound amazing",
+        "count": 2
+      },
+      {
+        "point": "Rich clear sound",
+        "count": 1
+      },
+      {
+        "point": "Sound is outstanding",
+        "count": 1
+      },
+      {
+        "point": "Better than the Echo Plus speaker",
+        "count": 1
+      },
+      {
+        "point": "Plays any music that I request, decent quality sound",
+        "count": 1
+      },
+      {
+        "point": "Sound is good",
+        "count": 3
+      },
+      {
+        "point": "Sound is amazing",
+        "count": 2
+      },
+      {
+        "point": "Sound quality is terrific",
+        "count": 1
+      },
+      {
+        "point": "Loud, clear sound",
+        "count": 1
+      },
+      {
+        "point": "Best sounding of the bunch",
+        "count": 1
+      },
+      {
+        "point": "Crisp and clear sound",
+        "count": 1
+      },
+      {
+        "point": "Good for Amazon Music and news",
+        "count": 1
+      }
+    ],
+    "verdict": "The Sound Quality of the Echo Show receives strong positive feedback. Users consistently praise the 'good,' 'great,' and 'awesome' sound, often noting it's 'superb' and 'rich clear.' Many describe it as having 'stronger bass, directional stereo, and Dolby Audio,' even claiming it has the 'best sound quality of any Echo to date.' The sound is said to 'fill the room nicely,' making it excellent for playing music. Some even find it superior to other Echo devices like the Echo Plus. Overall, the audio experience is a significant highlight for users."
+  },
+  {
+    "feature": "Smart Home Control Capabilities",
+    "sentiment": "Positive",
+    "key_points": [
+      {
+        "point": "Coexist with all IOT Devices",
+        "count": 1
+      },
+      {
+        "point": "Excellent on-demand security video with Amazon compatible cameras",
+        "count": 1
+      },
+      {
+        "point": "Automate the entire house (thermostat, lights with Phillips Hue bulbs)",
+        "count": 2
+      },
+      {
+        "point": "Control lighting and lots of other controls",
+        "count": 1
+      },
+      {
+        "point": "Link Phillips Hue and Nest systems to control with voice",
+        "count": 1
+      },
+      {
+        "point": "Control smart home devices (thermostat, lights)",
+        "count": 4
+      },
+      {
+        "point": "Interacts with security cameras (Arlo, Ring)",
+        "count": 15
+      },
+      {
+        "point": "Connects with Echo Dot and Bluetooth with ease",
+        "count": 1
+      },
+      {
+        "point": "Good for controlling lights in the house",
+        "count": 1
+      },
+      {
+        "point": "Controls my lights, TV and sound system",
+        "count": 1
+      },
+      {
+        "point": "Can turn on/off smart lights",
+        "count": 3
+      },
+      {
+        "point": "Able to control the entire house",
+        "count": 1
+      },
+      {
+        "point": "Works great with Arlo Pro/Arlo Pro 2 cameras",
+        "count": 5
+      },
+      {
+        "point": "Integrates with smart house devices and cameras",
+        "count": 1
+      },
+      {
+        "point": "Easy setup for connections to wi-fi cameras",
+        "count": 1
+      },
+      {
+        "point": "Easy to link with Nest thermostat and smart plugs",
+        "count": 1
+      },
+      {
+        "point": "Working great with Ring Doorbell",
+        "count": 1
+      },
+      {
+        "point": "Can be used to monitor outside/inside cameras",
+        "count": 1
+      },
+      {
+        "point": "Connects to other smart home products like Ring Floodlights",
+        "count": 1
+      },
+      {
+        "point": "Links with TP-Link Light switches flawlessly",
+        "count": 1
+      },
+      {
+        "point": "Plays well with Ring 2 Video Door Bell",
+        "count": 1
+      },
+      {
+        "point": "Helps control heating and doors",
+        "count": 1
+      },
+      {
+        "point": "Covers all smart home needs",
+        "count": 1
+      }
+    ],
+    "verdict": "Smart Home Control Capabilities are a major strength of the Echo Show, receiving widespread positive feedback. Users highly value its ability to 'coexist with all IoT devices' and automate various aspects of their homes, from thermostats and lights (especially Phillips Hue) to entire home systems. Its integration with security cameras, particularly Arlo Pro, Arlo Pro 2, and Ring Doorbell/Floodlights, is a recurring highlight, allowing for 'on-demand security video' and live feeds. The ease of linking with smart plugs and switches like TP-Link is also appreciated, making it a central hub for home automation. Users describe it as a 'great addition' and 'game changer' for smart home management."
+  },
+  {
+    "feature": "Privacy and Security Features",
+    "sentiment": "Mixed",
+    "key_points": [
+      {
+        "point": "Excellent on-demand security video with Amazon compatible cameras",
+        "count": 1
+      },
+      {
+        "point": "Can look in my house while away",
+        "count": 1
+      },
+      {
+        "point": "On-demand security video with Amazon compatible cameras",
+        "count": 1
+      },
+      {
+        "point": "Video calls to other Show owners or Alexa App holders",
+        "count": 1
+      },
+      {
+        "point": "Mute / Camera Defeat with red on screen indicator",
+        "count": 1
+      },
+      {
+        "point": "Used as a monitor for the Amazon cloud camera",
+        "count": 1
+      },
+      {
+        "point": "Can view security cameras/monitor outside inside cameras",
+        "count": 5
+      },
+      {
+        "point": "Drop in feature allows communication without answering",
+        "count": 3
+      },
+      {
+        "point": "Worried about hacks that allow active mic",
+        "count": 1
+      },
+      {
+        "point": "Needs privacy settings tweaked to prevent accidental video calls",
+        "count": 1
+      },
+      {
+        "point": "Not crazy about having a camera connected to the internet on my nightstand",
+        "count": 1
+      },
+      {
+        "point": "Installed screen protector that covers the camera when not in use",
+        "count": 1
+      },
+      {
+        "point": "Staff also aware of this camera feature and knows we drop in frequently",
+        "count": 1
+      },
+      {
+        "point": "Drop in is great for checking on elderly family because it does not require them to be technically savvy",
+        "count": 1
+      },
+      {
+        "point": "Helped know there is one spot in both our houses he can reach me by simply saying drop on daddy",
+        "count": 1
+      },
+      {
+        "point": "Cannot figure out how to have other Alexa owners drop in on her",
+        "count": 1
+      }
+    ],
+    "verdict": "Privacy and Security Features elicit a mixed sentiment. On the positive side, users appreciate the 'excellent on-demand security video' integration with compatible cameras, the ability to 'look in my house while away,' and the convenient 'drop-in' feature for easy communication, especially with elderly family members. The mute button and camera defeat indicator are also noted. However, significant concerns are raised regarding privacy, with mentions of worrying about 'hacks that allow an active mic' and discomfort with a 'camera connected to the Internet on my nightstand.' The 'drop-in' feature, while convenient, also raises privacy concerns as it allows connections without explicit acceptance, prompting users to 'tweak settings' or even use a 'screen protector' to cover the camera."
+  },
+  {
+    "feature": "Camera Quality",
+    "sentiment": "Positive",
+    "key_points": [
+      {
+        "point": "Excellent resolution with built-in camera",
+        "count": 1
+      },
+      {
+        "point": "Video call option is loved",
+        "count": 2
+      },
+      {
+        "point": "Great for video conferencing with family",
+        "count": 1
+      },
+      {
+        "point": "Video call quality is great",
+        "count": 2
+      },
+      {
+        "point": "Picture clarity awesome",
+        "count": 1
+      },
+      {
+        "point": "Video calls to other Show owners works well",
+        "count": 1
+      },
+      {
+        "point": "Camera works great",
+        "count": 1
+      },
+      {
+        "point": "Can see who's at your door",
+        "count": 2
+      },
+      {
+        "point": "Great for seeing grandkids/family",
+        "count": 4
+      },
+      {
+        "point": "Can use it to monitor outside/inside cameras",
+        "count": 1
+      },
+      {
+        "point": "Works well with home automation devices like Arlo Pro cams",
+        "count": 1
+      },
+      {
+        "point": "Video integration is a big plus for video calling kids at home and quick check who's at the door",
+        "count": 1
+      },
+      {
+        "point": "Love the video camaras",
+        "count": 1
+      },
+      {
+        "point": "Love the way it looks and feels",
+        "count": 1
+      },
+      {
+        "point": "Using as a baby monitor",
+        "count": 1
+      }
+    ],
+    "verdict": "The Camera Quality and its associated features are well-received, primarily for video communication and home monitoring. Users consistently praise the 'excellent resolution' of the built-in camera and the 'great video call quality' for connecting with family and friends. The ability to 'see who's at your door' and monitor security cameras (like Arlo Pro) is also highly valued. Many find the device useful for video conferencing and even as a baby monitor, highlighting the clarity and convenience of the visual feed."
+  },
+  {
+    "feature": "Ease of Setup and Use",
+    "sentiment": "Positive",
+    "key_points": [
+      {
+        "point": "Very easy to setup",
+        "count": 11
+      },
+      {
+        "point": "Easy to set up and use",
+        "count": 15
+      },
+      {
+        "point": "Super easy to set up",
+        "count": 5
+      },
+      {
+        "point": "Easy to set up and use",
+        "count": 1
+      },
+      {
+        "point": "Simple to set up",
+        "count": 5
+      },
+      {
+        "point": "Easy to use",
+        "count": 11
+      },
+      {
+        "point": "Hands-free operation",
+        "count": 2
+      },
+      {
+        "point": "Alexa is easy to use",
+        "count": 1
+      },
+      {
+        "point": "Simple to use",
+        "count": 3
+      },
+      {
+        "point": "User friendly",
+        "count": 5
+      },
+      {
+        "point": "Plug n play",
+        "count": 1
+      },
+      {
+        "point": "Intuitive and fun",
+        "count": 1
+      },
+      {
+        "point": "Easy to log in and set up",
+        "count": 1
+      },
+      {
+        "point": "Easy set up",
+        "count": 2
+      },
+      {
+        "point": "Simple setup",
+        "count": 1
+      },
+      {
+        "point": "Very simple to operate",
+        "count": 1
+      },
+      {
+        "point": "Easy to connect with other devices",
+        "count": 1
+      },
+      {
+        "point": "Download the app, plug it in, it walks you through the setup",
+        "count": 1
+      },
+      {
+        "point": "Easy to install",
+        "count": 2
+      }
+    ],
+    "verdict": "Ease of Setup and Use is a standout positive feature for the Amazon Echo Show. Users consistently describe the device as 'very easy to set up' and 'super easy to use,' often highlighting its 'simple' and 'intuitive' nature. The 'plug and play' aspect and clear instructions through the app are frequently mentioned as contributing factors to a smooth initial experience. Many praise the hands-free operation and user-friendly interface, making it accessible even for those less technologically advanced, like elderly parents or young children. Overall, the setup and daily interaction with the device are considered straightforward and hassle-free."
+  },
+  {
+    "feature": "Design and Build Quality",
+    "sentiment": "Positive",
+    "key_points": [
+      {
+        "point": "Well designed",
+        "count": 2
+      },
+      {
+        "point": "Great looking design",
+        "count": 1
+      },
+      {
+        "point": "Well designed, good sound",
+        "count": 1
+      },
+      {
+        "point": "Sleek design/looks nice sitting on coffee table",
+        "count": 2
+      },
+      {
+        "point": "Sleek shape fits right in with contemporary surroundings",
+        "count": 1
+      },
+      {
+        "point": "Build quality is first rate",
+        "count": 1
+      },
+      {
+        "point": "Rubber feet protect any surface & are anti-slip",
+        "count": 1
+      },
+      {
+        "point": "Very well designed and built",
+        "count": 1
+      },
+      {
+        "point": "Very durable and can stand to last",
+        "count": 1
+      },
+      {
+        "point": "Good size for a desk/reminds me of a normal alarm clock",
+        "count": 2
+      },
+      {
+        "point": "Looks great in bedroom",
+        "count": 1
+      },
+      {
+        "point": "Looks good",
+        "count": 1
+      },
+      {
+        "point": "Not sure if the value is there at the regular price of $249.99. but it is very cool device",
+        "count": 1
+      },
+      {
+        "point": "The angled screen works great",
+        "count": 1
+      },
+      {
+        "point": "Well put together",
+        "count": 1
+      },
+      {
+        "point": "It's not a huge deal, but if I could change one thing it would be a detachable power cable instead of hardwired",
+        "count": 1
+      },
+      {
+        "point": "I love the way it looks and feels",
+        "count": 1
+      },
+      {
+        "point": "Slightly odd shape but it seems to blend into our decor pretty well",
+        "count": 1
+      },
+      {
+        "point": "Well made",
+        "count": 1
+      },
+      {
+        "point": "Good looking",
+        "count": 1
+      }
+    ],
+    "verdict": "The Design and Build Quality of the Echo Show generally receive positive comments. Users describe it as 'well designed,' 'great looking,' and 'sleek,' noting that it fits well into various environments, from coffee tables to contemporary surroundings. The 'first-rate build quality' and durability are appreciated, with mentions of protective 'rubber feet.' The 7-inch screen size is also considered appropriate, resembling a 'normal alarm clock.' While some find the 'angled screen' initially 'funny looking,' they later realize its practical benefits. A minor point of improvement mentioned is the desire for a detachable power cable."
+  },
+  {
+    "feature": "Connectivity (Wifi and Bluetooth)",
+    "sentiment": "Positive",
+    "key_points": [
+      {
+        "point": "Coexist with all IOT Devices",
+        "count": 1
+      },
+      {
+        "point": "Connects with Echo Dot and Bluetooth with ease",
+        "count": 1
+      },
+      {
+        "point": "Works great with Bluetooth",
+        "count": 1
+      },
+      {
+        "point": "Easy to link to wi-fi",
+        "count": 2
+      },
+      {
+        "point": "Connects with Bluetooth and Wifi",
+        "count": 1
+      },
+      {
+        "point": "Bluetooth capabilities, but only works with Android, Samsung, Fire OS, IOS device, excluding Mac products",
+        "count": 1
+      },
+      {
+        "point": "Works great with Sonos system",
+        "count": 1
+      },
+      {
+        "point": "Easy setup for connections to wi-fi cameras",
+        "count": 1
+      },
+      {
+        "point": "Connect to my Bose blue tooth speaker, then tried the dot. Seems connection can be to only one device at a time though",
+        "count": 1
+      },
+      {
+        "point": "Requires too many components",
+        "count": 1
+      },
+      {
+        "point": "Should have come with some outputs plugs to connect it to bigger speakers / sound system",
+        "count": 1
+      },
+      {
+        "point": "It doesn't have the hub",
+        "count": 1
+      },
+      {
+        "point": "The only thing that I am disappointed with is that I have to go through Bluetooth to play my music which is on iTunes",
+        "count": 1
+      },
+      {
+        "point": "Amazon needs to work on the technology on device",
+        "count": 1
+      }
+    ],
+    "verdict": "Connectivity, encompassing both Wi-Fi and Bluetooth, is generally seen as positive, with users noting it 'connects with ease' and 'works great' for most devices and systems, including Sonos and various IoT devices. The ease of linking to Wi-Fi and connecting with other Echo products is appreciated. However, there are some limitations and suggestions for improvement. A notable drawback is the need to use Bluetooth for iTunes music, and a desire for auxiliary output plugs for external speakers. There's also a comment about the device not having a built-in hub and a general call for Amazon to enhance the device's core technology, suggesting that it 'requires too many components' for a fully integrated smart home experience."
+  },
+  {
+    "feature": "Value for Money",
+    "sentiment": "Mixed",
+    "key_points": [
+      {
+        "point": "Worth every penny",
+        "count": 1
+      },
+      {
+        "point": "Not sure if the value is there at the regular price of $249.99, but it is very cool device. Bought mine for special deal at Best Buy for $129.99",
+        "count": 1
+      },
+      {
+        "point": "Worth the sale price of $150.00",
+        "count": 1
+      },
+      {
+        "point": "Price is fair",
+        "count": 1
+      },
+      {
+        "point": "Got for a really good price/awesome Black Friday price",
+        "count": 3
+      },
+      {
+        "point": "Good deal/value",
+        "count": 3
+      },
+      {
+        "point": "A little hesitant to spend the money but glad I did",
+        "count": 1
+      },
+      {
+        "point": "If you can get it on sale",
+        "count": 1
+      },
+      {
+        "point": "Regular price too high",
+        "count": 1
+      },
+      {
+        "point": "Less than friendly price point if not on sale",
+        "count": 1
+      },
+      {
+        "point": "Not worth the extra money without YouTube functionality",
+        "count": 1
+      },
+      {
+        "point": "Not recommending this product at this time because of the cost and poor performance",
+        "count": 1
+      },
+      {
+        "point": "$150 is a good price for this Alexa with a screen",
+        "count": 1
+      },
+      {
+        "point": "Very affordable price",
+        "count": 1
+      },
+      {
+        "point": "The screen seems sort of wasteful now that I've been playing with it",
+        "count": 1
+      },
+      {
+        "point": "I didn’t think I would like the Echo Show —especially at the $200+ price point, but I tried it and love it!",
+        "count": 1
+      },
+      {
+        "point": "Big difference in cost between dot and show, but worth it!",
+        "count": 1
+      }
+    ],
+    "verdict": "Value for Money for the Echo Show is a mixed bag, heavily influenced by sales and specific features. Many users believe it's 'worth every penny' or a 'good deal' when purchased at a discounted price, such as during Black Friday or special promotions. However, at its 'regular price of $249.99' or 'over $200,' several users express hesitation and question its 'value,' suggesting it has a 'less than friendly price point' without a sale. The removal of YouTube functionality is specifically cited as diminishing its value for the 'extra money.' While some are pleasantly surprised by its utility despite the initial high price, others would only recommend it if on sale, indicating that the core functionality might not always justify the full cost for all users."
+  }
+]```

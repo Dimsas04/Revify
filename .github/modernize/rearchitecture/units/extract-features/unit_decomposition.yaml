@@ -1,0 +1,7 @@
+unit: extract-features
+commit: false
+candidate_splits:
+  - id: "revify_flow/src/revify_flow/api.py:594-653"
+    drivers: [execution_model_split, concern_split]
+    rationale: "Feature extraction status management and review scraping orchestration share one global worker but have separate completion semantics and failure handling."
+    source_slice: {file: "revify_flow/src/revify_flow/api.py", lines: [594, 653]}

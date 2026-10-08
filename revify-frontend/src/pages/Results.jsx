@@ -29,19 +29,36 @@ const Results = () => {
   const productUrl = location.state?.productUrl || '';
   const productName = location.state?.productName || 'Product Analysis';
   const passedResult = location.state?.result;
+  const analysisRequestId = location.state?.analysisRequestId;
+
+  const normalizeResult = (result) => {
+    if (!result || typeof result !== 'object') {
+      return result;
+    }
+
+    const analysis = result.analysis;
+    if (analysis && !Array.isArray(analysis) && Array.isArray(analysis.analyses)) {
+      return {
+        ...result,
+        analysis: analysis.analyses,
+      };
+    }
+
+    return result;
+  };
 
   useEffect(() => {
     const fetchResults = async () => {
       try {
         if (passedResult) {
-          setResults(passedResult);
+          setResults(normalizeResult(passedResult));
           setLoading(false);
           return;
         }
 
         // Try to fetch results from API
-        const data = await revifyAPI.getResults();
-        setResults(data);
+        const data = await revifyAPI.getResults(analysisRequestId);
+        setResults(normalizeResult(data.result || data));
       } catch (error) {
         console.error('Error fetching results:', error);
         setError(error.message);

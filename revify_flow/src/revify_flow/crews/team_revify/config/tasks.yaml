@@ -43,58 +43,88 @@ extract_features_task:
   agent: feature_extractor
 
 # New task for comprehensive review analysis
+# comprehensive_review_analysis_task:
+#   description: >
+#     Analyze the product reviews across ALL the extracted features.
+
+#     Features to analyze: {features}
+
+#     Reviews: {reviews}
+
+#     For EACH feature, provide a separate analysis section in your response.
+    
+#     Your output must be a valid JSON array where each element is an analysis object for one feature.
+    
+#     Each analysis object should contain:
+#     - "feature": The name of the feature being analyzed
+#     - "sentiment": Overall sentiment (Positive, Negative, Mixed, or Neutral)
+#     - "key_points": Array of points mentioned in reviews with their frequency counts
+#     - "verdict": A concise summary of user opinion on this feature
+#   expected_output: >
+#     A JSON array where each element analyzes one product feature based on user reviews.
+#   agent: review_analysis_agent
+#   context:
+#     - extract_features_task
+
+
 comprehensive_review_analysis_task:
   description: >
-    Analyze the product reviews across ALL the extracted features.
+    Analyze the supplied product reviews across all requested product features.
 
-    Features to analyze: {features}
-
-    Reviews: {reviews}
-
-    For EACH feature, provide a separate analysis section in your response.
-    
-    Your output must be a valid JSON array where each element is an analysis object for one feature.
-    
-    Each analysis object should contain:
-    - "feature": The name of the feature being analyzed
-    - "sentiment": Overall sentiment (Positive, Negative, Mixed, or Neutral)
-    - "key_points": Array of points mentioned in reviews with their frequency counts
-    - "verdict": A concise summary of user opinion on this feature
-  expected_output: >
-    A JSON array where each element analyzes one product feature based on user reviews.
-  agent: review_analysis_agent
-  context:
-    - extract_features_task
-
-analyze_feature_task:
-  description: >
-    For the feature: "{feature_name}", analyze the user reviews of the product from the perspective
-    of that feature only.
+    Features:
+    {features}
 
     Reviews:
     {reviews}
 
-    Output must be a valid JSON object containing:
-    - Feature name
-    - Sentiment
-    - Key points (with frequency count)
-    - Overall verdict
+    For each feature, provide:
+    - overall sentiment
+    - recurring key points with frequency counts
+    - concise feature-level verdict
 
-    Example Output:
-    {
-      "feature": "Battery Life",
-      "sentiment": "Positive",
-      "key_points": [
-        {"point": "Lasts for 2 days", "frequency": 32},
-        {"point": "Charges quickly", "frequency": 18}
-      ],
-      "verdict": "Users are very satisfied with the battery life, highlighting long-lasting performance and fast charging."
-    }
+    Base the analysis only on the supplied review evidence.
+
   expected_output: >
-    A valid JSON object summarizing the sentiment and key insights for the given feature.
+    A structured object containing an "analyses" array.
+    Each analysis must contain:
+    - feature
+    - sentiment
+    - key_points
+    - verdict
+
   agent: review_analysis_agent
-  context:
-    - extract_features_task
+
+
+
+# analyze_feature_task:
+#   description: >
+#     For the feature: "{feature_name}", analyze the user reviews of the product from the perspective
+#     of that feature only.
+
+#     Reviews:
+#     {reviews}
+
+#     Output must be a valid JSON object containing:
+#     - Feature name
+#     - Sentiment
+#     - Key points (with frequency count)
+#     - Overall verdict
+
+#     Example Output:
+#     {
+#       "feature": "Battery Life",
+#       "sentiment": "Positive",
+#       "key_points": [
+#         {"point": "Lasts for 2 days", "frequency": 32},
+#         {"point": "Charges quickly", "frequency": 18}
+#       ],
+#       "verdict": "Users are very satisfied with the battery life, highlighting long-lasting performance and fast charging."
+#     }
+#   expected_output: >
+#     A valid JSON object summarizing the sentiment and key insights for the given feature.
+#   agent: review_analysis_agent
+#   context:
+#     - extract_features_task
 
 # Task for Review Scraper Agent
 # scrape_reviews_task:
@@ -108,26 +138,26 @@ analyze_feature_task:
 #     A list of product reviews in JSON format, including user ratings and review content.
 #   agent: review_scraper
 
-scrape_reviews_task:
-  description: >
-    Scrape product reviews for the product: {product_url}
+# scrape_reviews_task:
+#   description: >
+#     Scrape product reviews for the product: {product_url}
     
-    Your task is to collect authentic and relevant reviews from e-commerce platforms
-    based on the product URL. Use the Amazon Scraper Tool to extract reviews from the provided URL.
+#     Your task is to collect authentic and relevant reviews from e-commerce platforms
+#     based on the product URL. Use the Amazon Scraper Tool to extract reviews from the provided URL.
 
-    IMPORTANT: Use EXACTLY the URL provided without any modifications. DO NOT replace the URL with an example URL.
+#     IMPORTANT: Use EXACTLY the URL provided without any modifications. DO NOT replace the URL with an example URL.
 
-    If the provided URL is from amazon.in (Indian site) or any other regional Amazon site, use that exact URL.
+#     If the provided URL is from amazon.in (Indian site) or any other regional Amazon site, use that exact URL.
 
-    Instructions:
-    1. Use the amazon_scraper_tool with the exact URL provided
-    2. Target 50 reviews unless otherwise specified
-    3. If provided, use the product name parameter
+#     Instructions:
+#     1. Use the amazon_scraper_tool with the exact URL provided
+#     2. Target number of reviews will be specified
+#     3. If provided, use the product name parameter
 
-    Specify the number of reviews to scrape and provide the product name if available.
-  expected_output: >
-    Path to a CSV file containing the scraped reviews with ratings and content.
-  agent: review_scraper
+#     Specify the number of reviews to scrape and provide the product name if available.
+#   expected_output: >
+#     A message mentioning that the reviews were succesfully stored/persisted into the Supabase Database.
+#   agent: review_scraper
 
 
 # scrape_reviews_task:
@@ -150,20 +180,20 @@ scrape_reviews_task:
 #   agent: review_scraper
 
 # Task for Manager Agent
-coordinate_workflow_task:
-  description: >
-    Manage the workflow for Revify by coordinating between agents.
+# coordinate_workflow_task:
+#   description: >
+#     Manage the workflow for Revify by coordinating between agents.
 
-    Your task is to:
-    1. Trigger the feature extraction task for the given product.
-    2. Initiate the review scraping process.
-    3. Delegate the review analysis to the review analysis agent based on the extracted features.
-    4. Compile the final results and ensure all agents perform their tasks successfully.
-  expected_output: >
-    A final report summarizing the product's feature-based review analysis, combining results
-    from the feature extraction and review analysis agents.
-  agent: manager_agent
-  context:
-    - extract_features_task
-    - scrape_reviews_task
+#     Your task is to:
+#     1. Trigger the feature extraction task for the given product.
+#     2. Initiate the review scraping process.
+#     3. Delegate the review analysis to the review analysis agent based on the extracted features.
+#     4. Compile the final results and ensure all agents perform their tasks successfully.
+#   expected_output: >
+#     A final report summarizing the product's feature-based review analysis, combining results
+#     from the feature extraction and review analysis agents.
+#   agent: manager_agent
+#   context:
+#     - extract_features_task
+#     - scrape_reviews_task
 

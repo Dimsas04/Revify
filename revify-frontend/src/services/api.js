@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { supabase } from '../lib/supabase';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -14,7 +15,12 @@ const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     console.log(`Making ${config.method?.toUpperCase()} request to ${config.url}`);
-    return config;
+    return supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.access_token) {
+        config.headers.Authorization = `Bearer ${session.access_token}`;
+      }
+      return config;
+    });
   },
   (error) => {
     console.error('Request error:', error);
@@ -58,9 +64,13 @@ export const revifyAPI = {
   },
 
   // Get feature extraction status (for polling)
-  getFeatureStatus: async () => {
+  getFeatureStatus: async (analysisRequestId) => {
     try {
-      const response = await api.get('/feature-status');
+      const response = await api.get('/feature-status', {
+        params: {
+          analysis_request_id: analysisRequestId,
+        },
+      });
       return response.data;
     } catch (error) {
       throw new Error('Failed to get feature extraction status');
@@ -68,11 +78,10 @@ export const revifyAPI = {
   },
 
   // Start product analysis with optional selected features
-  startAnalysis: async (productUrl, productName = '', selectedFeatures = null) => {
+  startAnalysis: async (analysisRequestId, selectedFeatures = null) => {
     try {
       const payload = {
-        product_url: productUrl,
-        product_name: productName
+        analysis_request_id: analysisRequestId,
       };
       
       // Only include selected_features if provided
@@ -91,9 +100,13 @@ export const revifyAPI = {
   },
 
   // Get analysis status
-  getAnalysisStatus: async () => {
+  getAnalysisStatus: async (analysisRequestId) => {
     try {
-      const response = await api.get('/status');
+      const response = await api.get('/status', {
+        params: {
+          analysis_request_id: analysisRequestId,
+        },
+      });
       return response.data;
     } catch (error) {
       throw new Error('Failed to get analysis status');
@@ -101,9 +114,13 @@ export const revifyAPI = {
   },
 
   // Get analysis results
-  getResults: async () => {
+  getResults: async (analysisRequestId) => {
     try {
-      const response = await api.get('/results');
+      const response = await api.get('/results', {
+        params: {
+          analysis_request_id: analysisRequestId,
+        },
+      });
       return response.data;
     } catch (error) {
       if (error.response?.status === 404) {

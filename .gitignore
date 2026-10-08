@@ -1,5 +1,9 @@
 .qodo
 .env
+.env.local
+.env.*.local
+revify_flow/.env
+revify-frontend/.env
 reviews_dataset/
 amazon_reviews_page.txt
 scraped_reviews.csv

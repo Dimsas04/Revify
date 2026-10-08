@@ -3,10 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { SparklesIcon } from '@heroicons/react/24/solid';
+import { useAuth } from '../context/AuthContext';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { user, signOut } = useAuth();
 
   const navigation = [
     { name: 'Home', href: '/' },
@@ -43,7 +45,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
+            {navigation.filter((item) => item.href === '/' || user).map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
@@ -64,6 +66,16 @@ const Navigation = () => {
                 )}
               </Link>
             ))}
+          </div>
+          <div className="hidden items-center gap-3 md:flex">
+            {user ? (
+              <>
+                <span className="max-w-32 truncate text-sm text-gray-600">{user.email}</span>
+                <button onClick={signOut} className="text-sm font-medium text-gray-600 hover:text-blue-600">Sign out</button>
+              </>
+            ) : (
+              <Link to="/login" className="text-sm font-medium text-blue-600">Sign in</Link>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -94,7 +106,7 @@ const Navigation = () => {
         className="md:hidden overflow-hidden bg-white/95 backdrop-blur-xl border-t border-gray-200/20"
       >
         <div className="px-4 py-2 space-y-1">
-          {navigation.map((item) => (
+          {navigation.filter((item) => item.href === '/' || user).map((item) => (
             <Link
               key={item.name}
               to={item.href}
@@ -108,6 +120,11 @@ const Navigation = () => {
               {item.name}
             </Link>
           ))}
+          {user ? (
+            <button onClick={signOut} className="block px-4 py-3 text-base font-medium text-gray-600">Sign out</button>
+          ) : (
+            <Link to="/login" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-base font-medium text-blue-600">Sign in</Link>
+          )}
         </div>
       </motion.div>
     </motion.nav>

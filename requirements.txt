@@ -98,6 +98,8 @@ sortedcontainers==2.4.0
 soupsieve==2.6
 SQLAlchemy==2.0.38
 stack-data==0.6.3
+apify-client>=1.8.1,<2.0.0
+supabase>=2.13.0,<3.0.0
 tenacity==9.0.0
 tqdm==4.67.1
 traitlets==5.14.3

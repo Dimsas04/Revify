@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 import Home from './pages/Home';
 import Analysis from './pages/Analysis';
 import Results from './pages/Results';
+import Login from './pages/Login';
+import ProtectedRoute from './components/ProtectedRoute';
 
 // Components
 import Navigation from './components/Navigation';
@@ -24,8 +26,9 @@ function App() {
         >
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/analysis" element={<Analysis />} />
-            <Route path="/results" element={<Results />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/analysis" element={<ProtectedRoute><Analysis /></ProtectedRoute>} />
+            <Route path="/results" element={<ProtectedRoute><Results /></ProtectedRoute>} />
           </Routes>
         </motion.main>
         <Footer />

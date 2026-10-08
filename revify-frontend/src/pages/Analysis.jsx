@@ -29,6 +29,7 @@ const Analysis = () => {
   const [extractedFeatures, setExtractedFeatures] = useState([]);
   const [selectedFeatures, setSelectedFeatures] = useState(new Set());
   const [reviewsReady, setReviewsReady] = useState(false);
+  const [analysisRequestId, setAnalysisRequestId] = useState(null);
   
   // Analysis state
   const [status, setStatus] = useState({
@@ -64,14 +65,20 @@ const Analysis = () => {
     
     try {
       // Start async feature extraction
-      await revifyAPI.extractFeatures(url, productName);
+      const extractionResponse = await revifyAPI.extractFeatures(url, productName);
+      const analysisRequestId = extractionResponse.analysis_request_id;
+
+      if (!analysisRequestId) {
+        throw new Error('The API did not return an analysis request ID');
+      }
+      setAnalysisRequestId(analysisRequestId);
       
       let featuresSet = false; // Track if we've already set features
       
       // Poll for completion
       const pollInterval = setInterval(async () => {
         try {
-          const statusResponse = await revifyAPI.getFeatureStatus();
+          const statusResponse = await revifyAPI.getFeatureStatus(analysisRequestId);
           
           if (statusResponse.error) {
             setExtractError(statusResponse.error);
@@ -80,8 +87,13 @@ const Analysis = () => {
             return;
           }
           
-          // Show features as soon as they're ready (even if reviews still scraping)
-          if (statusResponse.completed && statusResponse.features && !featuresSet) {
+          // The preparation endpoint reports its terminal state as
+          // "awaiting_selection", not with a separate completed flag.
+          if (
+            statusResponse.status === 'awaiting_selection' &&
+            Array.isArray(statusResponse.features) &&
+            !featuresSet
+          ) {
             // Set features ONLY ONCE
             setExtractedFeatures(statusResponse.features);
             setSelectedFeatures(new Set(statusResponse.features));
@@ -150,8 +162,7 @@ const Analysis = () => {
     
     try {
       await revifyAPI.startAnalysis(
-        productUrl,
-        productName,
+        analysisRequestId,
         Array.from(selectedFeatures) // Pass selected features
       );
     } catch (err) {
@@ -169,7 +180,7 @@ const Analysis = () => {
     
     const pollStatus = async () => {
       try {
-        const statusData = await revifyAPI.getAnalysisStatus();
+        const statusData = await revifyAPI.getAnalysisStatus(analysisRequestId);
         setStatus(statusData);
 
         // Calculate elapsed time if analysis is running
@@ -181,11 +192,12 @@ const Analysis = () => {
         }
 
         // If analysis is complete, navigate to results
-        if (statusData.result && !statusData.is_running && !statusData.error) {
+        if (statusData.status === 'completed' && statusData.result && !statusData.error) {
           setTimeout(() => {
             navigate('/results', { 
               state: { 
                 result: statusData.result,
+                analysisRequestId,
                 productUrl,
                 productName
               } 
@@ -207,7 +219,7 @@ const Analysis = () => {
     const interval = setInterval(pollStatus, 2000);
 
     return () => clearInterval(interval);
-  }, [currentStep, productUrl, productName, navigate]);
+  }, [currentStep, analysisRequestId, productUrl, productName, navigate]);
 
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);

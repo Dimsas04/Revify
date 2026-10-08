@@ -9,8 +9,7 @@ from ..services.analysis_service import (
     update_analysis_request,
     update_analysis_progress,
 )
-
-from ..main import summarize_reviews_chunked
+from ..services.review_summarization_service import summarize_reviews_chunked
 
 
 class RevifyAnalysisFlow(Flow):

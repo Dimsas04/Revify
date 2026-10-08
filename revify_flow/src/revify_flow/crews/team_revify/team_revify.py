@@ -3,7 +3,7 @@ from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
 from typing import List
 # from src.revify_flow.tools.amazon_scraper_tool import AmazonScraperTool
-from ...tools.apifyScrapper_tool import ApifyScraperTool
+# from ...tools.apifyScrapper_tool import ApifyScraperTool
 # from langchain.tools import tool
 from crewai.project import tool
 
@@ -19,7 +19,7 @@ class TeamRevify():
     def __init__(self):
         super().__init__()
         # self._scraper_tool = AmazonScraperTool()
-        self._scraper_tool = ApifyScraperTool()
+        # self._scraper_tool = ApifyScraperTool()
     
     agents: List[BaseAgent]
     tasks: List[Task]

@@ -1,0 +1,10 @@
+Flask
+flask-cors
+gunicorn
+
+crewai[tools]>=0.86.0,<1.0.0
+apify-client>=1.8.1,<2.0.0
+supabase>=2.13.0,<3.0.0
+
+python-dotenv
+python-dateutil

@@ -22,6 +22,22 @@ def _first(item: dict, *keys: str, default=None):
     return default
 
 
+def _default_dataset_id(run) -> str:
+    if isinstance(run, dict):
+        dataset_id = run.get("defaultDatasetId") or run.get("default_dataset_id")
+    else:
+        dataset_id = getattr(run, "default_dataset_id", None)
+        if not dataset_id:
+            dataset_id = getattr(run, "defaultDatasetId", None)
+
+    if not dataset_id:
+        raise RuntimeError(
+            "Apify run did not return a default dataset ID"
+        )
+
+    return str(dataset_id)
+
+
 def _parse_integer(value, *, minimum=None, maximum=None):
     if value is None or value == "":
         return None
@@ -153,9 +169,8 @@ def fetch_and_persist_reviews(
         run_input=run_input
     )
 
-    items = list(
-        client.dataset(run.default_dataset_id).iterate_items()
-    )
+    dataset_id = _default_dataset_id(run)
+    items = list(client.dataset(dataset_id).iterate_items())
 
     if not items:
         raise RuntimeError("Zebu returned no reviews")

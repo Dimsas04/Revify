@@ -40,8 +40,30 @@ export const extractProductNameFromURL = (url) => {
 };
 
 // Format sentiment color
+export const normalizeSentiment = (sentiment) => {
+  const value = String(sentiment || '').trim().toLowerCase();
+
+  if (value.includes('highly negative') || value === 'negative') {
+    return 'negative';
+  }
+  if (
+    value.includes('highly positive') ||
+    value.includes('mostly positive') ||
+    value === 'positive'
+  ) {
+    return 'positive';
+  }
+  if (value.includes('mixed')) {
+    return 'mixed';
+  }
+  if (value.includes('neutral') || value.includes('no data')) {
+    return 'neutral';
+  }
+  return 'unknown';
+};
+
 export const getSentimentColor = (sentiment) => {
-  switch (sentiment?.toLowerCase()) {
+  switch (normalizeSentiment(sentiment)) {
     case 'positive':
       return 'text-green-600 bg-green-50 border-green-200';
     case 'negative':
@@ -57,7 +79,7 @@ export const getSentimentColor = (sentiment) => {
 
 // Format sentiment icon
 export const getSentimentIcon = (sentiment) => {
-  switch (sentiment?.toLowerCase()) {
+  switch (normalizeSentiment(sentiment)) {
     case 'positive':
       return '😊';
     case 'negative':

@@ -14,7 +14,13 @@ import {
 } from '@heroicons/react/24/outline';
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { revifyAPI } from '../services/api';
-import { getSentimentColor, getSentimentIcon, downloadJSON, copyToClipboard } from '../utils/helpers';
+import {
+  getSentimentColor,
+  getSentimentIcon,
+  normalizeSentiment,
+  downloadJSON,
+  copyToClipboard
+} from '../utils/helpers';
 
 const Results = () => {
   const [results, setResults] = useState(null);
@@ -114,7 +120,7 @@ const Results = () => {
   };
 
   const getSentimentColorHex = (sentiment) => {
-    switch (sentiment?.toLowerCase()) {
+    switch (normalizeSentiment(sentiment)) {
       case 'positive': return '#22c55e';
       case 'negative': return '#ef4444';
       case 'mixed': return '#f59e0b';
@@ -135,7 +141,7 @@ const Results = () => {
   };
 
   const getSentimentScore = (sentiment) => {
-    switch (sentiment?.toLowerCase()) {
+    switch (normalizeSentiment(sentiment)) {
       case 'positive': return 100;
       case 'mixed': return 60;
       case 'neutral': return 50;

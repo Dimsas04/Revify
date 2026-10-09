@@ -41,13 +41,28 @@ api.interceptors.response.use(
 
 export const revifyAPI = {
   // Health check
-  healthCheck: async () => {
-    try {
-      const response = await api.get('/health');
-      return response.data;
-    } catch (error) {
-      throw new Error('Failed to connect to Revify API');
+  healthCheck: async (attempts = 3) => {
+    let lastError;
+
+    for (let attempt = 1; attempt <= attempts; attempt += 1) {
+      try {
+        const response = await api.get('/health', {
+          timeout: 15000,
+        });
+        return response.data;
+      } catch (error) {
+        lastError = error;
+        if (attempt < attempts) {
+          await new Promise((resolve) => setTimeout(resolve, 2000));
+        }
+      }
     }
+
+    throw new Error(
+      lastError?.code === 'ECONNABORTED'
+        ? 'The API is waking up. Please try again shortly.'
+        : 'Failed to connect to Revify API'
+    );
   },
 
   // Extract features only (new endpoint - async, starts background task)

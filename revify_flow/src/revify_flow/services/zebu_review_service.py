@@ -137,7 +137,7 @@ def fetch_and_persist_reviews(
         "recent_days": 0,
         "unique_only": True,
         "get_customers_say": True,
-        "max_reviews": 7,
+        "max_reviews": 200,
         "sort_reviews_by": [
             "helpful",
             "recent",

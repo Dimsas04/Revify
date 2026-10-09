@@ -18,6 +18,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [apiConnected, setApiConnected] = useState(false);
+  const [isWakingApi, setIsWakingApi] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -26,13 +27,24 @@ const Home = () => {
   }, []);
 
   const checkAPIConnection = async () => {
+    setIsWakingApi(true);
     try {
       await revifyAPI.healthCheck();
       setApiConnected(true);
+      setError('');
+      return true;
     } catch (error) {
       setApiConnected(false);
       console.warn('API not connected:', error.message);
+      return false;
+    } finally {
+      setIsWakingApi(false);
     }
+  };
+
+  const handleWakeApi = async () => {
+    setError('');
+    await checkAPIConnection();
   };
 
   const handleSubmit = async (e) => {
@@ -55,8 +67,11 @@ const Home = () => {
     }
 
     if (!apiConnected) {
-      setError('Unable to connect to Revify API. Please make sure the backend server is running.');
-      return;
+      const connected = await checkAPIConnection();
+      if (!connected) {
+        setError('The API is still waking up. Please click "Wake API" again in a few seconds.');
+        return;
+      }
     }
 
     try {
@@ -145,6 +160,19 @@ const Home = () => {
               <span className="text-sm font-medium text-gray-700">
                 {apiConnected ? 'API Connected' : 'API Disconnected'}
               </span>
+              {!apiConnected && (
+                <button
+                  type="button"
+                  onClick={handleWakeApi}
+                  disabled={isWakingApi}
+                  className="ml-2 inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700 hover:bg-blue-200 disabled:cursor-wait disabled:opacity-60"
+                >
+                  {isWakingApi && (
+                    <span className="h-3 w-3 animate-spin rounded-full border-2 border-blue-600 border-t-transparent" />
+                  )}
+                  {isWakingApi ? 'Waking API...' : 'Wake API'}
+                </button>
+              )}
             </motion.div>
 
             {/* Main Title */}

@@ -42,31 +42,20 @@ export const extractProductNameFromURL = (url) => {
 // Format sentiment color
 export const normalizeSentiment = (sentiment) => {
   const value = String(sentiment || '').trim().toLowerCase();
-  if ("mixed" in value) {
+
+  if (value.includes('mixed')) {
     return 'mixed';
   }
-  if ("positive" in value) {
+  if (value.includes('positive')) {
     return 'positive';
   }
-  if ("negative" in value) {
+  if (value.includes('negative')) {
     return 'negative';
   }
-  // if (
-  //   "positive" in value 
-  // ) {
-  //   return 'positive';
-  // }
-  // if (value.includes('mixed')) {
-  //   return 'mixed';
-  // }
-  // if (value.includes('neutral') || value.includes('no data')) {
-  //   return 'neutral';
-  // }
-  // return 'unknown';
-  if ("neutral" in value || "no data" in value) {
+  if (value.includes('neutral') || value.includes('no data')) {
     return 'neutral';
   }
-
+  return 'unknown';
 };
 
 export const getSentimentColor = (sentiment) => {

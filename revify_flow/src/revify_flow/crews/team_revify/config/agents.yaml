@@ -37,7 +37,7 @@ feature_extractor:
     You are an e-commerce analysis expert who has reviewed thousands of products across
     different categories. You have a deep understanding of what features matter most to
     consumers for each product type.
-  llm: gemini/gemini-3.5-flash
+  llm: gemini/gemini-3.5-flash-lite
 
 # review_scraper:
 #   role: >
@@ -71,7 +71,7 @@ chunk_summary_agent:
   backstory: >
     You are skilled at processing user reviews in batches and distilling them into concise summaries.
     You identify product trends, commonly mentioned features, and sentiment tone from the feedback.
-  llm: gemini/gemini-3.5-flash
+  llm: gemini/gemini-3.5-flash-lite
 
 
 review_analysis_agent:
@@ -85,4 +85,4 @@ review_analysis_agent:
     large volumes of review data and identifying patterns across multiple product features.
     Your specialty is extracting meaningful insights from unstructured review text and
     organizing those insights by product feature.
-  llm: gemini/gemini-3.5-flash
+  llm: gemini/gemini-3.5-flash-lite

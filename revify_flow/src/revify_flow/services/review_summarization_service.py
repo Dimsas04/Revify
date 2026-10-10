@@ -1,7 +1,7 @@
 from ..crews.team_revify.team_revify import TeamRevify
 from crewai import Crew, Process, Task
 
-def summarize_reviews_chunked(review_data, team, chunk_size=500):
+def summarize_reviews_chunked(review_data, team, chunk_size):
     print(f"\n🔧 Chunking and summarizing {len(review_data)} reviews...")
     
     review_chunks = [

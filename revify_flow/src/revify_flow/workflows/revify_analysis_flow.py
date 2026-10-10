@@ -147,7 +147,7 @@ class RevifyAnalysisFlow(Flow):
         chunk_summaries = summarize_reviews_chunked(
             review_dicts,
             team,
-            chunk_size=30,
+            chunk_size=50,
         )
 
         if not chunk_summaries:
